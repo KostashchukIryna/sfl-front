@@ -1,0 +1,80 @@
+<div class="log-in">
+    <div class="div-2">
+      <div class="overlap-group">
+        <!-- тло-еліпси -->
+        <div class="ellipse"></div>
+        <div class="ellipse-2"></div>
+  
+        <!-- сама форма -->
+        <div class="sign-up-form">
+          <div class="sign-up-form__inner">
+            <!-- кнопка закриття -->
+            <div class="cancel-instance" (click)="close()">
+              <img src="assets/icons/cancel.svg" alt="Close">
+            </div>
+  
+            <!-- логотип -->
+            <div class="logo-instance">
+              <img src="assets/images/logo.svg" alt="SFL" class="logo-2">
+              <span>SFL</span>
+            </div>
+  
+            <div class="frame-2">
+              <div class="text-wrapper-3">Вхід до акаунту</div>
+  
+              <div class="frame-3">
+                <!-- email -->
+                <div class="frame-4">
+                  <div class="text-wrapper-4">Електронна пошта</div>
+                  <div class="frame-100">
+                    <div class="frame-instance">
+                      <div class="frame-8">
+                        <input
+                          type="email"
+                          [(ngModel)]="email"
+                          placeholder="Наприклад, iryna@gmail.com">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- пароль -->
+                <div class="frame-5">
+                  <div class="text-wrapper-4">Пароль</div>
+                  <div class="frame-100">
+                    <div class="view-wrapper">
+                      <input
+                        [type]="showPassword ? 'text' : 'password'"
+                        [(ngModel)]="password"
+                        placeholder="Введіть пароль">
+                      <div class="icon-instance-node" (click)="togglePasswordVisibility()">
+                        <img src="assets/icons/eye.svg" alt="Toggle visibility">
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="text-wrapper-5">Відновити пароль</a>
+                </div>
+  
+                <!-- кнопка увійти -->
+                <button class="frame-6" (click)="login()">Увійти</button>
+              </div>
+  
+              <!-- посилання на реєстрацію -->
+              <div class="frame-7">
+                <span>Не маєте акаунта?</span>
+                <a href="#" class="text-wrapper-5">Зареєструватись</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- додаткові еліпси для фону -->
+        <div class="ellipse-3"></div>
+        <div class="ellipse-4"></div>
+        <div class="ellipse-5"></div>
+        <div class="ellipse-6"></div>
+        <div class="ellipse-7"></div>
+      </div>
+    </div>
+  </div>
+  
