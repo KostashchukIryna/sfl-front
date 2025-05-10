@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --additional: rgba(14, 30, 62, 1);
+    --black-text: rgba(27, 29, 32, 1);
+    --decoration: rgba(219, 235, 248, 1);
+    --error: rgba(245, 39, 32, 1);
+    --extra: rgba(237, 241, 248, 1);
+    --grey-text: rgba(132, 140, 169, 1);
+    --h-1-font-family: "Montserrat Alternates", Helvetica;
+    --h-1-font-size: 36px;
+    --h-1-font-style: normal;
+    --h-1-font-weight: 700;
+    --h-1-letter-spacing: 0px;
+    --h-1-line-height: 129.99999523162842%;
+    --h-2-font-family: "Montserrat Alternates", Helvetica;
+    --h-2-font-size: 24px;
+    --h-2-font-style: normal;
+    --h-2-font-weight: 600;
+    --h-2-letter-spacing: 0px;
+    --h-2-line-height: 139.9999976158142%;
+    --h-3-font-family: "Montserrat Alternates", Helvetica;
+    --h-3-font-size: 20px;
+    --h-3-font-style: normal;
+    --h-3-font-weight: 500;
+    --h-3-letter-spacing: 0px;
+    --h-3-line-height: 139.9999976158142%;
+    --h-4-font-family: "Montserrat Alternates", Helvetica;
+    --h-4-font-size: 16px;
+    --h-4-font-style: normal;
+    --h-4-font-weight: 500;
+    --h-4-letter-spacing: 0px;
+    --h-4-line-height: 150%;
+    --p-font-family: "Montserrat Alternates", Helvetica;
+    --p-font-size: 16px;
+    --p-font-style: normal;
+    --p-font-weight: 400;
+    --p-letter-spacing: 0px;
+    --p-line-height: 139.9999976158142%;
+    --primary: rgba(53, 93, 170, 1);
+    --secondary: rgba(34, 63, 120, 1);
+    --sub-font-family: "Montserrat Alternates", Helvetica;
+    --sub-font-size: 12px;
+    --sub-font-style: normal;
+    --sub-font-weight: 500;
+    --sub-letter-spacing: 0px;
+    --sub-line-height: 150%;
+    --success: rgba(76, 175, 80, 1);
+    --sup-font-family: "Montserrat Alternates", Helvetica;
+    --sup-font-size: 12px;
+    --sup-font-style: normal;
+    --sup-font-weight: 500;
+    --sup-letter-spacing: 0px;
+    --sup-line-height: 150%;
+    --tertiary: rgba(80, 128, 226, 1);
+    --warning: rgba(244, 228, 57, 1);
+    --white-text: rgba(249, 251, 255, 1);
+}
+
+
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --primary: #355daa;
+    --secondary: #223f78;
+    --tertiary: #5080e2;
+    --additional: #0e1e3e;
+    --black-text: #1b1d20;
+    --white-text: #f9fbff;
+    --success: #4caf50;
+    --warning: #f4e439;
+    --error: #f52720;
+    --grey-text: #848ca9;
+    --decoration: #dbebf8;
+    --extra: #edf1f8;
+    --stroke-gradient: linear-gradient(180deg,
+            rgba(53, 93, 170, 1) 0%,
+            rgba(110, 144, 255, 1) 100%);
+
+    /* Fonts */
+    --h1-font-family: "Montserrat Alternates", Helvetica;
+    --h1-font-size: 36px;
+    --h1-line-height: 130%;
+    --h1-font-weight: 700;
+    --h1-font-style: normal;
+    --h2-font-family: "Montserrat Alternates", Helvetica;
+    --h2-font-size: 24px;
+    --h2-line-height: 140%;
+    --h2-font-weight: 600;
+    --h2-font-style: normal;
+    --h3-font-family: "Montserrat Alternates", Helvetica;
+    --h3-font-size: 20px;
+    --h3-line-height: 140%;
+    --h3-font-weight: 500;
+    --h3-font-style: normal;
+    --h4-font-family: "Montserrat Alternates", Helvetica;
+    --h4-font-size: 16px;
+    --h4-line-height: 150%;
+    --h4-font-weight: 500;
+    --h4-font-style: normal;
+    --p-font-family: "Montserrat Alternates", Helvetica;
+    --p-font-size: 16px;
+    --p-line-height: 140%;
+    --p-font-weight: 400;
+    --p-font-style: normal;
+    --sub-font-family: "Montserrat Alternates", Helvetica;
+    --sub-font-size: 12px;
+    --sub-line-height: 150%;
+    --sub-font-weight: 500;
+    --sub-font-style: normal;
+    --sup-font-family: "Montserrat Alternates", Helvetica;
+    --sup-font-size: 12px;
+    --sup-line-height: 150%;
+    --sup-font-weight: 500;
+    --sup-font-style: normal;
+
+    /* Effects */
+}

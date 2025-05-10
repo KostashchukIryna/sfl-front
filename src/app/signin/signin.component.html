@@ -1,80 +1,70 @@
-<div class="log-in">
-    <div class="div-2">
-      <div class="overlap-group">
-        <!-- тло-еліпси -->
-        <div class="ellipse"></div>
-        <div class="ellipse-2"></div>
-  
-        <!-- сама форма -->
-        <div class="sign-up-form">
-          <div class="sign-up-form__inner">
-            <!-- кнопка закриття -->
-            <div class="cancel-instance" (click)="close()">
-              <img src="assets/icons/cancel.svg" alt="Close">
-            </div>
-  
-            <!-- логотип -->
-            <div class="logo-instance">
-              <img src="assets/images/logo.svg" alt="SFL" class="logo-2">
-              <span>SFL</span>
-            </div>
-  
-            <div class="frame-2">
-              <div class="text-wrapper-3">Вхід до акаунту</div>
-  
-              <div class="frame-3">
-                <!-- email -->
-                <div class="frame-4">
-                  <div class="text-wrapper-4">Електронна пошта</div>
-                  <div class="frame-100">
-                    <div class="frame-instance">
-                      <div class="frame-8">
-                        <input
-                          type="email"
-                          [(ngModel)]="email"
-                          placeholder="Наприклад, iryna@gmail.com">
-                      </div>
+<body>
+    <div class="sign-in">
+        <div class="decoration"></div>
+        <div class="div"></div>
+        <div class="decoration-2"></div>
+        <div class="final-autolayout">
+            <div class="decoration-3"></div>
+            <div class="decoration-4"></div>
+            <img class="back-logo" src="assets/back-logo.svg" />
+            <div class="autolayout-form">
+                <div class="logo"><img class="vector" src="assets\Vector.svg" /> <img class="SFL"
+                        src="assets/SFL.svg" /></div>
+                <div class="autolayout">
+                    <div class="label">Вхід до акаунту</div>
+                    <div class="registration-form">
+                        <div class="registration-form-2">
+                            <div class="registration-form-3">
+                                <div class="registration-form-4">
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Електронна пошта</div>
+                                        <div class="input">
+                                            <img class="input-icon" src="assets/email.svg" alt="Email icon" />
+                                            <input type="email" formControlName="email"
+                                                placeholder="Наприклад, irynagmail.com" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Пароль</div>
+                                        <div class="input">
+
+                                            <img class="input-icon" src="assets/key.svg" alt="Key icon">
+
+                                            <input id="password" [type]="passwordVisible ? 'text' : 'password'"
+                                                formControlName="password" placeholder="Введіть пароль" required />
+
+                                            <img class="input-icon-eye"
+                                                src="{{ passwordVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg' }}"
+                                                (click)="togglePassword()" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="link">
+                                    <a routerLink="/login" class="login-label">
+                                <div class="text-wrapper-2">Відновити пароль</div>
+                            </a>
+                                </div>
+                            </div>
+                            <button class="button">
+                                <div class="text-wrapper-3">Увійти</div>
+                            </button>
+                        </div>
+
+                        <div class="link-to-registration">
+                            <div class="text-wrapper-account">Не маєте акаунта?</div>
+
+                            <a routerLink="/login" class="login-label">
+                                <div class="text-wrapper-sign-up">Зареєструватись</div>
+                            </a>
+
+                        </div>
                     </div>
-                  </div>
                 </div>
-  
-                <!-- пароль -->
-                <div class="frame-5">
-                  <div class="text-wrapper-4">Пароль</div>
-                  <div class="frame-100">
-                    <div class="view-wrapper">
-                      <input
-                        [type]="showPassword ? 'text' : 'password'"
-                        [(ngModel)]="password"
-                        placeholder="Введіть пароль">
-                      <div class="icon-instance-node" (click)="togglePasswordVisibility()">
-                        <img src="assets/icons/eye.svg" alt="Toggle visibility">
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="text-wrapper-5">Відновити пароль</a>
-                </div>
-  
-                <!-- кнопка увійти -->
-                <button class="frame-6" (click)="login()">Увійти</button>
-              </div>
-  
-              <!-- посилання на реєстрацію -->
-              <div class="frame-7">
-                <span>Не маєте акаунта?</span>
-                <a href="#" class="text-wrapper-5">Зареєструватись</a>
-              </div>
             </div>
-          </div>
         </div>
-  
-        <!-- додаткові еліпси для фону -->
-        <div class="ellipse-3"></div>
-        <div class="ellipse-4"></div>
-        <div class="ellipse-5"></div>
-        <div class="ellipse-6"></div>
-        <div class="ellipse-7"></div>
-      </div>
+        <div class="decoration-5"></div>
     </div>
-  </div>
-  
+</body>

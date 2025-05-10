@@ -1,324 +1,439 @@
-.log-in {
-    background-color: #f8fbff;
+.sign-in {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-.log-in .div-2 {
-    background-color: var(--white-text);
+    flex-wrap: wrap;
     height: 1024px;
-    overflow: hidden;
-    position: relative;
-    width: 1440px;
-}
-
-.log-in .overlap-group {
-    height: 1020px;
-    left: 195px;
-    position: absolute;
-    top: 45px;
-    width: 1040px;
-}
-
-.log-in .ellipse {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: 0;
-    opacity: 0.65;
-    position: absolute;
-    top: 774px;
-    width: 246px;
-}
-
-.log-in .ellipse-2 {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: 794px;
-    opacity: 0.65;
-    position: absolute;
-    top: 0;
-    width: 246px;
-}
-
-.log-in .sign-up-form {
-    background-color: #edf1f8;
-    border: none;
-    border-radius: 64px;
-    height: 718px;
-    left: 143px;
-    overflow: hidden;
-    position: absolute;
-    top: 108px;
-    width: 765px;
-}
-
-.log-in .sign-up-form::before {
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    background: linear-gradient(180deg, rgba(53, 93, 170, 1) 0%, rgba(110, 144, 255, 1) 100%);
-    border-radius: 64px;
-    content: "";
-    inset: 0;
-    mask-composite: exclude;
-    padding: 1px;
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
-}
-
-.log-in .ellipse-3 {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: 675px;
-    opacity: 0.65;
-    position: absolute;
-    top: 98px;
-    width: 246px;
-}
-
-.log-in .ellipse-4 {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: -134px;
-    opacity: 0.65;
-    position: absolute;
-    top: 483px;
-    width: 246px;
-}
-
-.log-in .ellipse-5 {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: -134px;
-    opacity: 0.6;
-    position: absolute;
-    top: -82px;
-    width: 246px;
-}
-
-.log-in .cancel-instance {
-    height: 40px !important;
-    left: 691px !important;
-    position: absolute !important;
-    top: 38px !important;
-    width: 40px !important;
-}
-
-.log-in .logo-instance {
-    display: flex !important;
-    gap: 12.36px !important;
-    height: 38px !important;
-    left: 312px !important;
-    position: absolute !important;
-    top: 40px !important;
-    width: 140px !important;
-}
-
-.log-in .design-component-instance-node {
-    height: 37.08px !important;
-    position: relative !important;
-    width: 37.08px !important;
-}
-
-.log-in .logo-2 {
-    height: 39.62px !important;
-    margin-bottom: -0.81px !important;
-    margin-top: -0.81px !important;
-    width: 90.48px !important;
-}
-
-.log-in .frame-2 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    left: 173px;
-    position: absolute;
-    top: 144px;
-    width: 417px;
-}
-
-.log-in .text-wrapper-3 {
-    align-self: stretch;
-    color: var(--additional);
-    font-family: "Montserrat Alternates-Bold", Helvetica;
-    font-size: 34px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 44.2px;
-    margin-top: -1px;
-    position: relative;
-}
-
-.log-in .frame-3 {
     align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 64px;
+    justify-content: center;
+    gap: 0px 0px;
     position: relative;
-    width: 100%;
+    background-color: var(--white-text);
+    overflow: hidden;
 }
 
-.log-in .frame-4 {
+.sign-in .decoration {
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    top: 922px;
+    left: 204px;
+    background-color: var(--secondary);
+    border-radius: 123px;
+    filter: blur(124.4px);
+    opacity: 0.65;
+}
+
+.sign-in .div {
+    top: 50px;
+    left: 17px;
+    opacity: 0.65;
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background-color: var(--secondary);
+    border-radius: 123px;
+    filter: blur(124.4px);
+}
+
+.sign-in .decoration-2 {
+    top: 108px;
+    left: 971px;
+    opacity: 0.65;
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background-color: var(--secondary);
+    border-radius: 123px;
+    filter: blur(124.4px);
+}
+
+.sign-in .final-autolayout {
+    display: flex;
+    width: 700px;
     align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 28px;
+    gap: 68px;
+    padding: 64px 180px 64px 64px;
     position: relative;
+    background-color: var(--extra);
+    border-radius: 64px;
+    border: none;
+}
+
+.sign-in .final-autolayout::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 64px;
+    background: linear-gradient(180deg, rgba(53, 93, 170, 1) 0%, rgba(110, 144, 255, 1) 100%);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sign-in .decoration-3 {
+    top: 186px;
+    left: 696px;
+    opacity: 0.35;
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background-color: var(--secondary);
+    border-radius: 123px;
+    filter: blur(124.4px);
+}
+
+.sign-in .decoration-4 {
+    top: 412px;
+    left: -30px;
+    opacity: 0.35;
+    position: absolute;
+    width: 246px;
+    height: 246px;
+    background-color: var(--secondary);
+    border-radius: 123px;
+    filter: blur(124.4px);
+}
+
+.sign-in .back-logo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.sign-in .back-logo:hover {
+    color: var(--primary);
+}
+
+.sign-in .autolayout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
     width: 100%;
 }
 
-.log-in .frame-5 {
-    align-items: flex-end;
-    align-self: stretch;
+.sign-in .logo {
     display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 8px;
+    width: 140px;
+    height: 38px;
+    align-items: center;
+    gap: 12.36px;
     position: relative;
-    width: 100%;
 }
 
-.log-in .frame-6 {
+.sign-in .vector {
+    position: relative;
+    width: 37.08px;
+    height: 37.08px;
+}
+
+.sign-in .SFL {
+    position: relative;
+    width: 90.48px;
+    height: 39.62px;
+    margin-top: -0.81px;
+    margin-bottom: -0.81px;
+}
+
+.sign-in .autolayout {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
     gap: 24px;
     position: relative;
-    width: 100%;
-}
-
-.log-in .frame-7 {
-    align-items: flex-start;
     align-self: stretch;
-    display: flex;
+    width: 100%;
     flex: 0 0 auto;
-    flex-direction: column;
-    gap: 12px;
-    position: relative;
-    width: 100%;
 }
 
-.log-in .text-wrapper-4 {
+.sign-in .label {
+    position: relative;
     align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--h-1-font-family);
+    font-weight: var(--h-1-font-weight);
     color: var(--additional);
+    font-size: var(--h-1-font-size);
+    text-align: center;
+    letter-spacing: var(--h-1-letter-spacing);
+    line-height: var(--h-1-line-height);
+    font-style: var(--h-1-font-style);
+}
+
+.sign-in .registration-form {
+    align-items: center;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.sign-in .registration-form-2 {
+    align-items: flex-start;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.sign-in .registration-form-3 {
+    align-items: flex-end;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.sign-in .registration-form-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.sign-in .div-2 {
+    align-items: flex-start;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.sign-in .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
     font-family: var(--h-3-font-family);
-    font-size: var(--h-3-font-size);
-    font-style: var(--h-3-font-style);
     font-weight: var(--h-3-font-weight);
+    color: var(--additional);
+    font-size: var(--h-3-font-size);
     letter-spacing: var(--h-3-letter-spacing);
     line-height: var(--h-3-line-height);
-    margin-top: -1px;
-    position: relative;
+    font-style: var(--h-3-font-style);
 }
 
-.log-in .frame-100 {
-    align-self: stretch !important;
-    flex: 0 0 auto !important;
-    margin-bottom: -1px !important;
-    margin-left: -1px !important;
-    margin-right: -1px !important;
-    width: 100% !important;
+.sign-in .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #364fb203;
+  transition: border-color 0.2s ease-in-out; /* плавний перехід */
 }
 
-.log-in .icon-instance-node {
-    height: 24px !important;
-    position: relative !important;
-    width: 24px !important;
+.sign-in .input:hover,
+.sign-in .input:focus-within {
+  border-color: var(--primary);
 }
 
-.log-in .view {
-    left: -1px !important;
+
+
+.sign-in .input input {
+  flex: 1;                    
+  border: none;             
+  background: transparent;    
+  padding: 0;                
+  margin-right: 0;
+  font-family: var(--p-font-family);
+  font-size: var(--p-font-size);
+  color: var(--black-text);
+  outline: none;            
+  width: 100%;
 }
 
-.log-in .frame-instance {
-    align-self: stretch !important;
-    width: 100% !important;
-}
-
-.log-in .frame-8 {
+.sign-in .input-icon {
+    display: inline-flex;
     align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 4px;
+    margin-right: 8px;
     position: relative;
+    flex: 0 0 auto;
 }
 
-.log-in .div-wrapper {
-    align-items: flex-start;
+.sign-in .input-icon-eye {
     display: inline-flex;
-    flex: 0 0 auto;
-    gap: 4px;
+    align-items: center;
+    margin-right: 8px;
     position: relative;
+    flex: 0 0 auto;
+    cursor: pointer;
 }
 
-.log-in .text-wrapper-5 {
-    color: var(--secondary);
-    font-family: var(--h-4-font-family);
-    font-size: var(--h-4-font-size);
-    font-style: var(--h-4-font-style);
-    font-weight: var(--h-4-font-weight);
-    letter-spacing: var(--h-4-letter-spacing);
-    line-height: var(--h-4-line-height);
-    margin-top: -1px;
+.sign-in .img {
     position: relative;
-    text-align: center;
-    white-space: nowrap;
+    width: 24px;
+    height: 24px;
+}
+
+.sign-in .placeholder {
+    position: relative;
     width: fit-content;
+    font-family: var(--p-font-family);
+    font-weight: var(--p-font-weight);
+    color: var(--grey-text);
+    font-size: var(--p-font-size);
+    letter-spacing: var(--p-letter-spacing);
+    line-height: var(--p-line-height);
+    white-space: nowrap;
+    font-style: var(--p-font-style);
 }
 
-.log-in .view-wrapper {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 64px;
-    justify-content: center;
+.sign-in .empty-icon {
     position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
 }
 
-.log-in .component-237 {
-    left: -2px !important;
+.sign-in .link {
+    position: relative;
+    width: 164px;
+    height: 24px;
 }
 
-.log-in .ellipse-6 {
+.sign-in .text-wrapper-2 {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-family: var(--h-4-font-family);
+    font-weight: var(--h-1-font-weight);
+    color: var(--primary);
+    font-size: var(--h-4-font-size);
+    line-height: var(--h-4-line-height);
+    text-decoration: underline;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: var(--h-4-letter-spacing);
+    font-style: var(--h-4-font-style);
+}
+
+.sign-in .text-wrapper-2:hover {
+   color: var(--secondary);
+}
+
+.sign-in .button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.sign-in .button:hover {
+  background-color: var(--tertiary);
+}
+
+
+.sign-in .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    color: var(--white-text);
+    font-size: var(--h-3-font-size);
+    line-height: var(--h-3-line-height);
+    text-align: center;
+    letter-spacing: var(--h-3-letter-spacing);
+    font-style: var(--h-3-font-style);
+}
+
+.sign-in .link-to-registration {
+    display: inline-block;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.sign-in .text-wrapper-account {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-3-font-weight);
+    color: var(--secondary);
+    font-size: var(--h-3-font-size);
+    line-height: var(--h-3-line-height);
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: var(--h-3-letter-spacing);
+    font-style: var(--h-3-font-style);
+}
+
+.sign-in .login-label {
+  position: relative;
+  flex: 0 0 auto;
+  transition: color 0.2s ease-in-out;
+}
+
+.sign-in .text-wrapper-sign-up {
+    position: relative;
+    font-family: var(--h-3-font-family);
+    font-weight: var(--h-1-font-weight);
+    color: var(--primary);
+    font-size: var(--h-3-font-size);
+    line-height: var(--h-3-line-height);
+    text-decoration: underline;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: var(--h-3-letter-spacing);
+    font-style: var(--h-3-font-style);
+}
+
+.sign-in .text-wrapper-sign-up:hover {
+   color: var(--secondary);
+}
+
+.sign-in .decoration-5 {
+    top: 904px;
+    left: 1126px;
+    opacity: 0.65;
+    position: absolute;
+    width: 246px;
+    height: 246px;
     background-color: var(--secondary);
     border-radius: 123px;
     filter: blur(124.4px);
-    height: 246px;
-    left: -136px;
-    opacity: 0.65;
-    position: absolute;
-    top: 134px;
-    width: 246px;
-}
-
-.log-in .ellipse-7 {
-    background-color: var(--secondary);
-    border-radius: 123px;
-    filter: blur(124.4px);
-    height: 246px;
-    left: 1334px;
-    opacity: 0.65;
-    position: absolute;
-    top: 720px;
-    width: 246px;
 }

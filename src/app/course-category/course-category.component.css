@@ -1,0 +1,791 @@
+.course-category,
+.course-category * {
+    box-sizing: border-box;
+}
+
+.course-category {
+    background: #cfd6e2;
+    padding: 24px 48px 24px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+.bar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 9.57px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 111px;
+    height: 31px;
+    position: relative;
+}
+
+.vector {
+    flex-shrink: 0;
+    width: 29.42px;
+    height: 29.42px;
+    position: relative;
+    overflow: visible;
+}
+
+.sfl {
+    flex-shrink: 0;
+    width: 71.78px;
+    height: 31.43px;
+    position: relative;
+    overflow: visible;
+}
+
+.list-of-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 111px;
+    position: relative;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.newsmode {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.learning {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.menu-book {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.info2 {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.down-bar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    position: relative;
+}
+
+.notifications {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.account-circle {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.decoration {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.68;
+    flex-shrink: 0;
+    width: 218px;
+    height: 218px;
+    position: absolute;
+    left: -130px;
+    top: 422px;
+    filter: blur(124.4px);
+}
+
+.learning2 {
+    background: #ffffff;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(180deg, rgba(53, 93, 170, 1.00) 0%, rgba(110, 144, 255, 1.00) 100%);
+    border-image-slice: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    max-width: 1600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.learning2 {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 48px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    flex: 1;
+    max-width: 1600px;
+    position: relative;
+    overflow: hidden;
+
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+.decoration2 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 862px;
+    top: 473px;
+    filter: blur(124.4px);
+}
+
+.courses-category {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 425px;
+    position: relative;
+}
+
+.div2 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-item {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.vector2 {
+    flex-shrink: 0;
+    width: 18px;
+    height: 21px;
+    position: relative;
+    overflow: visible;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.course-category-icon {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h3-font-family, );
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+}
+
+.separator {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.course-item2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+.div5 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h3-font-family, );
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    width: 20px;
+    height: 28px;
+}
+
+.category-course-label {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h3-font-family, );
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
+
+.separator2 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.separator3 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.separator4 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.separator5 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+.separator6 {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+    position: relative;
+    overflow: visible;
+}
+
+
+.courses-list-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+
+.courses-list-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.div9 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h2-font-family);
+    font-size: 22.66666603088379px;
+    line-height: 150%;
+    font-weight: 500;
+    position: relative;
+}
+
+.div10 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h2-font-family);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    flex: 1;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.mage-filter {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div11 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+}
+
+.frame-156 {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-147 {
+    background: var(--decoration, #dbebf8);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.frame-146 {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.search {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div12 {
+    color: #000000;
+    text-align: left;
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
+.mdi-sort {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.courses-list-category {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background: var(--decoration, #dbebf8);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 276px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    background-image:
+        linear-gradient(var(--white-text, #f9fbff), var(--white-text, #f9fbff)),
+        var(--stroke-gradient, linear-gradient(180deg, rgba(53, 93, 170, 1) 0%, rgba(110, 144, 255, 1) 100%));
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+}
+
+
+.hero-image {
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 236px;
+    height: 181px;
+    position: relative;
+}
+
+.rating {
+    background: var(--white-text, #f9fbff);
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #414d87;
+    border-width: 1px;
+    padding: 4px 8px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+._5 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size, 16px);
+    line-height: var(--p-line-height, 140%);
+    font-weight: var(--p-font-weight, 400);
+    position: relative;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div13 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h2-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.div14 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--sub-font-family);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.button {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div15 {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h4-font-family);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
+.star2 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star3 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star4 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star5 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star6 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star7 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.star8 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.decoration3 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 130px;
+    top: 716px;
+    filter: blur(124.4px);
+}
+
+.decoration4 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1275px;
+    top: 132px;
+    filter: blur(124.4px);
+}

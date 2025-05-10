@@ -1,1 +1,97 @@
-<p>signup works!</p>
+
+<body>
+    <div class="sign-up">
+        <div class="decoration"></div>
+        <div class="div"></div>
+        <div class="decoration-2"></div>
+        <div class="final-autolayout">
+            <div class="decoration-3"></div>
+            <div class="decoration-4"></div>
+            <img class="back-logo" src="assets/back-logo.svg" />
+            <div class="autolayout-form">
+                <div class="logo"><img class="vector" src="assets\Vector.svg" /> <img class="SFL"
+                        src="assets/SFL.svg" /></div>
+                <div class="autolayout">
+                    <div class="label">Реєстрація акаунту</div>
+                    <div class="registration-form">
+                        <div class="registration-form-2">
+                            <div class="registration-form-3">
+                                <div class="registration-form-4">
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Логін</div>
+                                        <div class="input">
+                                            <img class="input-icon" src="assets/username.svg" alt="Username icon" />
+                                            <input type="email" formControlName="email"
+                                                placeholder="Придумайте логін" required />
+                                            <div class="empty-icon"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Електронна пошта</div>
+                                        <div class="input">
+                                            <img class="input-icon" src="assets/email.svg" alt="Email icon" />
+                                            <input type="email" formControlName="email"
+                                                placeholder="Наприклад, irynagmail.com" required />
+                                            <div class="empty-icon"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Пароль</div>
+                                        <div class="input">
+
+                                            <img class="input-icon" src="assets/key.svg" alt="Key icon">
+
+                                            <input id="password" [type]="passwordVisible ? 'text' : 'password'"
+                                                formControlName="password" placeholder="Введіть пароль" required />
+
+                                            <img class="input-icon"
+                                                src="{{ passwordVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg' }}"
+                                                (click)="togglePassword()" />
+                                        </div>
+                                    </div>
+
+                                    <div class="div-2">
+                                        <div class="text-wrapper">Повторіть пароль</div>
+                                        <div class="input">
+                                            <img class="input-icon" src="assets/key.svg" alt="Key icon">
+
+                                            <input id="confirmPassword" [type]="confirmVisible ? 'text' : 'password'"
+                                                formControlName="confirmPassword"
+                                                placeholder="Повторіть введений пароль" required />
+
+                                            <img class="input-icon"
+                                                src="{{ confirmVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg' }}"
+                                                (click)="toggleConfirm()" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="link">
+                                    <a routerLink="/login" class="login-label">
+                                <div class="text-wrapper-2">Відновити пароль</div>
+                            </a>
+                                </div>
+                            </div>
+                            <button class="button">
+                                <div class="text-wrapper-3">Зареєструватись</div>
+                            </button>
+                        </div>
+                        <div class="link-to-registration">
+                            <div class="text-wrapper-4">Маєте акаунт?</div>
+
+                            <a routerLink="/login" class="login-label">
+                                <div class="text-wrapper-5">Увійти</div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decoration-5"></div>
+    </div>
+</body>
