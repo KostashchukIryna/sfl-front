@@ -114,3 +114,11 @@
 
     /* Effects */
 }
+
+.snackbar-error {
+    background-color: var(--decoration);
+    color: var(--secondary);
+    border-radius: 123px;
+    border: 1px solid;
+    border-color: var(--error);
+}

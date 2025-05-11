@@ -12,6 +12,7 @@
                         src="assets/SFL.svg" /></div>
                 <div class="autolayout">
                     <div class="label">Вхід до акаунту</div>
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <div class="registration-form">
                         <div class="registration-form-2">
                             <div class="registration-form-3">
@@ -62,6 +63,7 @@
 
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
