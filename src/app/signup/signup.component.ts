@@ -20,10 +20,10 @@ export class SignupComponent implements OnInit {
   responseMessage = ""
 
   constructor(private fb: FormBuilder,
-     private router: Router,
-     private snackbar: SnackbarService,
-     private userService: UserService
-  ) {}
+    private router: Router,
+    private snackbar: SnackbarService,
+    private userService: UserService
+  ) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -32,6 +32,7 @@ export class SignupComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', Validators.required]
     }, { validators: this.passwordMatch });
+    this.startIconToggleLoop();
   }
 
   togglePassword(): void {
@@ -56,10 +57,10 @@ export class SignupComponent implements OnInit {
       email: formData.email,
       password: formData.password
     }
-    this.userService.signup(data).subscribe((response:any)=>{
+    this.userService.signup(data).subscribe((response: any) => {
       this.router.navigate(['/']);
-    },(error)=>{
-      if(error.error?.message){
+    }, (error) => {
+      if (error.error?.message) {
         this.responseMessage = error.error?.message;
       }
       else {
@@ -67,5 +68,20 @@ export class SignupComponent implements OnInit {
       }
       this.snackbar.openSnackBar(this.responseMessage, GlobalConstants.error)
     })
+  }
+
+  currentIcon: string = 'assets/alarm-icon1.svg';
+  fading: boolean = false;
+  private toggleState: boolean = false;
+
+  private startIconToggleLoop(): void {
+    setInterval(() => {
+      this.fading = true;
+      setTimeout(() => {
+        this.toggleState = !this.toggleState;
+        this.currentIcon = this.toggleState ? 'assets/alarm-icon1.svg' : 'assets/alarm-icon2.svg';
+        this.fading = false;
+      }, 0);
+    }, 200);
   }
 }

@@ -111,8 +111,6 @@ body {
     --sup-line-height: 150%;
     --sup-font-weight: 500;
     --sup-font-style: normal;
-
-    /* Effects */
 }
 
 .snackbar-error {

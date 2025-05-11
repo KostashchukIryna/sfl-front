@@ -258,12 +258,9 @@
     border-color: var(--primary);
 }
 
-
-
 .sign-in .input input {
     flex: 1;
     border: none;
-    background: transparent;
     padding: 0;
     margin-right: 0;
     font-family: var(--p-font-family);
