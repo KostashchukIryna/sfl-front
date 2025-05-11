@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 :root {
     --additional: rgba(14, 30, 62, 1);
     --black-text: rgba(27, 29, 32, 1);
@@ -55,10 +59,7 @@
     --white-text: rgba(249, 251, 255, 1);
 }
 
-
-/* Figma Styles of your File */
 :root {
-    /* Colors */
     --primary: #355daa;
     --secondary: #223f78;
     --tertiary: #5080e2;
@@ -75,7 +76,6 @@
             rgba(53, 93, 170, 1) 0%,
             rgba(110, 144, 255, 1) 100%);
 
-    /* Fonts */
     --h1-font-family: "Montserrat Alternates", Helvetica;
     --h1-font-size: 36px;
     --h1-line-height: 130%;
