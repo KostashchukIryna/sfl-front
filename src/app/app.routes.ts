@@ -3,6 +3,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { CourseCategoryComponent } from './course-category/course-category.component';
 import { CourseMenuComponent } from './course-menu/course-menu.component';
+import { ModuleMenuComponent } from './module-menu/module-menu.component';
 
 export const routes: Routes = [
   { path: '', component: SigninComponent },
@@ -10,5 +11,6 @@ export const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'course-category', component: CourseCategoryComponent },
   { path: 'course-menu', component: CourseMenuComponent },
+  { path: 'module-menu', component: ModuleMenuComponent },
   { path: '**', redirectTo: '/home' },
 ];

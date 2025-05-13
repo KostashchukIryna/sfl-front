@@ -100,10 +100,12 @@
     position: relative;
     width: 48px;
     height: 48px;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .sign-in .back-logo:hover {
-    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .sign-in .autolayout-form {
