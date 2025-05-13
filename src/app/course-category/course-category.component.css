@@ -307,7 +307,7 @@
     flex-shrink: 0;
     position: relative;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .course-category-item:hover {
@@ -428,7 +428,7 @@
     flex-shrink: 0;
     position: relative;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .filter:hover {
@@ -463,7 +463,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    transition: border-color 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .search-autolayout {
@@ -479,7 +479,7 @@
     position: relative;
     border: 1px solid;
     border-color: #364fb203;
-    transition: border-color 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .search-autolayout:hover,
@@ -529,7 +529,7 @@
     overflow: visible;
     aspect-ratio: 1;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .sort-icon:hover {
@@ -570,7 +570,7 @@
     background-origin: padding-box, border-box;
     background-clip: padding-box, border-box;
 
-    transition: background-image 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .course-card:hover {
@@ -689,7 +689,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 

@@ -1,14 +1,14 @@
 .sign-up {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: var(--white-text);
-  overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--white-text);
+    overflow: hidden;
 
-  width: 100vw;
-  min-height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 
@@ -102,6 +102,12 @@
     position: relative;
     width: 48px;
     height: 48px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sign-up .back-logo:hover {
+    transform: scale(1.1);
 }
 
 .sign-up .autolayout-form {
@@ -230,39 +236,41 @@
 }
 
 .sign-up .input {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  position: relative;
-  align-self: stretch;
-  flex: 0 0 auto;
-  background-color: #ffffff;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #364fb203;
-  transition: border-color 0.2s ease-in-out; /* плавний перехід */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #364fb203;
+    transition: border-color 0.2s ease-in-out;
+    /* плавний перехід */
 }
 
 .sign-up .input:hover,
 .sign-up .input:focus-within {
-  border-color: var(--primary); /* або напряму: #355daa */
+    border-color: var(--primary);
+    /* або напряму: #355daa */
 }
 
 
 
 .sign-up .input input {
-  flex: 1;                    
-  border: none;             
-  background: transparent;    
-  padding: 0;                
-  margin-right: 0;
-  font-family: var(--p-font-family);
-  font-size: var(--p-font-size);
-  color: var(--black-text);
-  outline: none;            
-  width: 100%;
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-right: 0;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    color: var(--black-text);
+    outline: none;
+    width: 100%;
 }
 
 .sign-up .input-icon {
@@ -320,7 +328,7 @@
 }
 
 .sign-up .text-wrapper-2:hover {
-   color: var(--secondary);
+    color: var(--secondary);
 }
 
 .sign-up .button {
@@ -343,7 +351,7 @@
 
 
 .sign-up .button:hover {
-  background-color: var(--tertiary);
+    background-color: var(--tertiary);
 }
 
 
@@ -383,10 +391,10 @@
 }
 
 .sign-up .login-label {
-  position: relative;
-  width: 93px;
-  height: 24px;
-  transition: color 0.2s ease-in-out;
+    position: relative;
+    width: 93px;
+    height: 24px;
+    transition: color 0.2s ease-in-out;
 }
 
 .sign-up .text-wrapper-5 {
@@ -404,7 +412,7 @@
 }
 
 .sign-up .text-wrapper-5:hover {
-   color: var(--secondary);
+    color: var(--secondary);
 }
 
 .sign-up .decoration-5 {

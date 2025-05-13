@@ -15,189 +15,6 @@
     overflow-y: auto;
 }
 
-.sidebar {
-    background: var(--white-text, #f9fbff);
-    border-radius: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(180deg,
-            rgba(53, 93, 170, 1) 0%,
-            rgba(110, 144, 255, 1) 100%);
-    border-image-slice: 1;
-    padding: 32px 0px 32px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-    width: 128px;
-    height: 1024px;
-    position: relative;
-    overflow: hidden;
-}
-
-.bar-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    gap: 9.57px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 111px;
-    height: 31px;
-    position: relative;
-}
-
-.vector {
-    flex-shrink: 0;
-    width: 29.42px;
-    height: 29.42px;
-    position: relative;
-    overflow: visible;
-}
-
-.sfl {
-    flex-shrink: 0;
-    width: 71.78px;
-    height: 31.43px;
-    position: relative;
-    overflow: visible;
-}
-
-.list-of-elements {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 111px;
-    position: relative;
-}
-
-.media {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.newsmode {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
-}
-
-.div {
-    color: var(--secondary, #223f78);
-    text-align: center;
-    font-family: var(--h4-font-family, "MontserratAlternates-Medium", sans-serif);
-    font-size: var(--h4-font-size, 16px);
-    line-height: var(--h4-line-height, 150%);
-    font-weight: var(--h4-font-weight, 500);
-    position: relative;
-    align-self: stretch;
-}
-
-.learning {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.menu-book {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.info2 {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
-}
-
-.down-bar-list {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 48px;
-    position: relative;
-}
-
-.notifications {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
-}
-
-.account-circle {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
-}
-
-.decoration {
-    background: var(--secondary, #223f78);
-    border-radius: 50%;
-    opacity: 0.68;
-    flex-shrink: 0;
-    width: 218px;
-    height: 218px;
-    position: absolute;
-    left: -130px;
-    top: 422px;
-    filter: blur(124.4px);
-}
-
 .background {
     background: #ffffff;
     border-image-slice: 1;
@@ -274,13 +91,17 @@
     border-radius: 12px;
 }
 
-.arrow-back {
-    flex-shrink: 0;
+
+.back-logo {
+    position: relative;
     width: 48px;
     height: 48px;
-    position: relative;
-    overflow: visible;
-    aspect-ratio: 1;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.back-logo:hover {
+    transform: scale(1.1);
 }
 
 .frame-264 {
@@ -481,7 +302,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
@@ -649,7 +470,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
@@ -701,7 +522,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
@@ -814,7 +635,7 @@
     font-weight: var(--h2-font-weight, 600);
     text-decoration: underline;
     position: relative;
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
