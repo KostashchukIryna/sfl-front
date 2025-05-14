@@ -13,7 +13,7 @@ export class ArticleComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.showScrollButton = window.pageYOffset > 2000;
+    this.showScrollButton = window.pageYOffset > 1700;
   }
 
   scrollToTop(): void {

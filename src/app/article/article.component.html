@@ -154,11 +154,10 @@
                 </div>
             </div>
         </div>
-
         <div class="mark-as-completed" (click)="scrollToTop()">
             Відмітити, як прочитану
         </div>
-        <button class="scroll-to-top" *ngIf="showScrollButton" (click)="scrollToTop()">
+        <button class="scroll-to-top" [class.visible]="showScrollButton" (click)="scrollToTop()">
             <img class="back-logo-up" src="assets/back-logo.svg" />
         </button>
     </div>
