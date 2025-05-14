@@ -133,7 +133,14 @@
     position: relative;
     overflow: visible;
     aspect-ratio: 1;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
+
+.back-logo:hover {
+    transform: scale(1.1);
+}
+
 
 .time-to-read {
     display: flex;
