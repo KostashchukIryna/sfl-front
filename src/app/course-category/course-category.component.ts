@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { SidebarComponent } from '../sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-course-category',
   templateUrl: './course-category.component.html',
-  imports: [SidebarComponent],
+  standalone: true,
+  imports: [SidebarComponent, RouterModule],
   styleUrls: ['./course-category.component.css']
 })
 export class CourseCategoryComponent {

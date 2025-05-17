@@ -1,0 +1,366 @@
+<div class="course-landing">
+    <app-sidebar></app-sidebar>
+    <div class="background">
+        <div class="decoration2"></div>
+        <div class="decoration3"></div>
+        <div class="decoration4"></div>
+        <div class="main">
+            <div class="navbar">
+                <img class="back" src="assets/back-logo.svg" />
+            </div>
+            <div class="label-course-name">
+                <div class="div2">Курс «Основи виживання у кризових умовах»</div>
+            </div>
+            <div class="hero-section" style="
+          background: url(assets/hero-image-landing.png) center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        ">
+                <div class="bars-and-stars">
+                    <div class="bars">
+                        <div class="frame-164">
+                            <div class="div3">Базова медична допомога</div>
+                        </div>
+                        <div class="frame-165">
+                            <div class="div3">Психологічна витривалість</div>
+                        </div>
+                        <div class="frame-166">
+                            <div class="div3">Комунікація без зв’язку</div>
+                        </div>
+                        <div class="frame-167">
+                            <div class="div3">Підготовка тривожного рюкзака</div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <img class="star-icon" src="assets/star.svg" />
+                            <div class="label-star">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="program-course" (click)="scrollToModules()">
+                        <div class="div4">ПРОГРАМА КУРСУ</div>
+                    </div>
+                    <div class="start-course" routerLink="/course-menu">
+                        <div class="div4">РОЗПОЧАТИ КУРС</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="autolayout-course-about">
+            <div class="course-about">
+                <div class="div5">Про що курс</div>
+                <div class="about-course">
+                    <div class="div6">
+                        «Основи виживання у кризових умовах» — це базовий онлайн-курс для
+                        всіх, хто хоче бути готовим до надзвичайних ситуацій. Він створений
+                        за підтримки експертів з цивільної безпеки, медиків та психологів і
+                        охоплює ключові навички, які можуть врятувати життя в умовах війни,
+                        природних катастроф чи побутових аварій.
+                    </div>
+                    <div class="div6">
+                        На курсі ви дізнаєтесь: як правильно реагувати на обстріли, що
+                        обов’язково має бути у «тривожній валізі», як надавати першу
+                        допомогу, як виживати без електрики, води чи зв’язку, а також як
+                        зберігати психологічну стійкість у стресових ситуаціях.
+                    </div>
+                </div>
+            </div>
+            <div class="who-need">
+                <div class="div7">Кому стане в пригоді</div>
+                <div class="who-need-text">
+                    <div class="div6">
+                        Військовим і цивільним, волонтерам, працівникам освіти та охорони
+                        здоров’я, батькам, студентам, мешканцям міст і сіл — усім, хто хоче
+                        знати, як діяти в умовах надзвичайної ситуації та допомогти собі й
+                        іншим.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-modules" #modules>
+            <div class="div7">Програма курсу</div>
+            <div class="course-items">
+                <div class="module-card">
+                    <div class="_1">1.</div>
+                    <img class="img" src="assets/img1.png" />
+                    <div class="module-fucntions">
+                        <div class="module-title">
+                            <div class="div8">Основи виживання в місті</div>
+                        </div>
+                        <div class="div6">
+                            Оцінка ризиків. Пошук безпечних укриттів. Правила поведінки під
+                            час обстрілів. Використання тривожного рюкзака в екстрених умовах.
+                        </div>
+                        <div class="elements-module">
+                            <div class="article">
+                                <div class="_12">1 стаття</div>
+                            </div>
+                            <div class="lection">
+                                <div class="_12">1 лекція</div>
+                            </div>
+                            <div class="test">
+                                <div class="div9">тест</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card2">
+                    <div class="_2">2.</div>
+                    <img class="img" src="assets/img2.png" />
+                    <div class="module-fucntions">
+                        <div class="module-title">
+                            <div class="div8">Підготовка &quot;Тривожної валізи&quot;</div>
+                        </div>
+                        <div class="div6">
+                            Що має містити тривожний рюкзак. Як обирати необхідне спорядження.
+                            Практичні поради для різних сценаріїв евакуації.
+                        </div>
+                        <div class="elements-module">
+                            <div class="article">
+                                <div class="_22">2 статі</div>
+                            </div>
+                            <div class="lection">
+                                <div class="_12">1 лекція</div>
+                            </div>
+                            <div class="test">
+                                <div class="div9">тест</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-card3">
+                    <div class="_3">3.</div>
+                    <img class="img" src="assets/img3.png" />
+                    <div class="module-fucntions">
+                        <div class="module-title">
+                            <div class="div8">
+                                Психологічна стійкість у надзвичайному стані
+                            </div>
+                        </div>
+                        <div class="div6">
+                            Стратегії подолання стресу. Самодопомога при панічних атаках. Як
+                            підтримувати моральний стан у кризових обставинах.
+                        </div>
+                        <div class="elements-module">
+                            <div class="article">
+                                <div class="_12">1 стаття</div>
+                            </div>
+                            <div class="lection">
+                                <div class="_32">3 лекції</div>
+                            </div>
+                            <div class="test">
+                                <div class="div9">тест</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="div7">Завдяки курсу ви навчитеся</div>
+            <div class="list-benefits">
+                <div class="benefit">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">Оцінювати ризики в надзвичайних ситуаціях</div>
+                        <div class="div11">
+                            Знання основ аналізу загроз допоможе вам приймати правильні
+                            рішення навіть в умовах стресу.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-184">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">Знаходити та облаштовувати безпечні укриття</div>
+                        <div class="div11">
+                            Розуміння ключових принципів вибору укриття підвищить ваші шанси
+                            на виживання.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-185">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">
+                            Складати та використовувати &quot;тривожну валізу&quot;
+                        </div>
+                        <div class="div11">
+                            Ви знатимете, які речі обов&#039;язково мають бути під рукою в
+                            екстреній ситуації.
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-186">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">Надавати базову першу допомогу</div>
+                        <div class="div11">
+                            Курс навчить вас базовим медичним діям, які можуть врятувати життя
+                            до прибуття медиків.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-187">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">Виживати без електрики, води та комунікацій</div>
+                        <div class="div11">
+                            Опануєте техніки забезпечення себе необхідним навіть в умовах
+                            повного відключення комунальних послуг.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-188">
+                    <img class="star-benefit" src="assets/star-benefit.svg" />
+                    <div class="label-benefit">
+                        <div class="div10">Підтримувати психологічну стійкість</div>
+                        <div class="div11">
+                            Ви дізнаєтесь, як управляти стресом, уникати паніки і допомагати
+                            іншим у кризових обставинах.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="decoration5"></div>
+        <div class="decoration6"></div>
+        <div class="decoration7"></div>
+        <div class="decoration8"></div>
+        <div class="decoration9"></div>
+        <div class="decoration10"></div>
+        <div class="reviews">
+            <div class="label-reviews">Оцінка курсу та відгуки студентів</div>
+            <div class="autolayout-reviews">
+                <div class="rating2">
+                    <div class="average-score">
+                        Середня оцінка за відгуками 210 студентів
+                    </div>
+                    <div class="stars">
+                        <img class="star" src="assets/star.svg" />
+                        <div class="score-star">5</div>
+                    </div>
+                </div>
+                <div class="list-reviews">
+                    <div class="review">
+                        <div class="review-up">
+                            <div class="avatar-star">
+                                <img class="avatar-img" src="avatar-img0.png" />
+                                <div class="autolayout-stars">
+                                    <div class="star-rating-label">
+                                        <img class="star-review-personal" src="assets/star.svg" />
+                                        <div class="label-star">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-date">
+                                <div class="div12">Олена Бондаренко</div>
+                                <div class="date-review">22.04.2025</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Дуже корисний курс! Тепер знаю, як діяти під час тривоги та що
+                            обов’язково має бути в тривожному рюкзаку.
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-up">
+                            <div class="avatar-star">
+                                <img class="avatar-img" src="avatar-img1.png" />
+                                <div class="autolayout-stars">
+                                    <div class="star-rating-label">
+                                        <img class="star-review-personal" src="assets/star.svg" />
+                                        <div class="label-star">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-date">
+                                <div class="div12">Артем</div>
+                                <div class="date-review">21.02.2025</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Зрозуміло і практично. Навіть не думав про багато важливих деталей
+                            — дякую за доступність і корисність матеріалів!
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-up">
+                            <div class="avatar-star">
+                                <img class="avatar-img" src="avatar-img2.png" />
+                                <div class="autolayout-stars">
+                                    <div class="star-rating-label">
+                                        <img class="star-review-personal" src="assets/star.svg" />
+                                        <div class="label-star">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-date">
+                                <div class="div12">Марина</div>
+                                <div class="date-review">03.01.2025</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Пройшла курс разом із родиною. Особливо сподобалася частина
+                            про психологічну стійкість — дуже актуально в нинішніх умовах.
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review-up">
+                            <div class="avatar-star">
+                                <img class="avatar-img" src="avatar-img3.png" />
+                                <div class="autolayout-stars">
+                                    <div class="star-rating-label">
+                                        <img class="star-review-personal" src="assets/star.svg" />
+                                        <div class="label-star">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name-date">
+                                <div class="div12">Олена Бондаренко</div>
+                                <div class="date-review">22.04.2025</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            Дуже корисний курс! Тепер знаю, як діяти під час тривоги та що
+                            обов’язково має бути в тривожному рюкзаку.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="access-to-course">
+            <div class="autolayout-access">
+                <div class="autolayout-access-1">
+                    <img class="checker-course" src="assets/checker-course.svg" />
+                    <div class="div15">Ви маєте доступ до курсу</div>
+                </div>
+                <div class="list-course-text">
+                    <div class="course-text">
+                        <img class="check" src="assets/check-course.svg" />
+                        <div class="div16">Доступ до цього курсу назавжди</div>
+                    </div>
+                    <div class="course-text">
+                        <img class="check" src="assets/check-course.svg" />
+                        <div class="div16">Доступ до всіх оновлень цього курсу</div>
+                    </div>
+                    <div class="course-text">
+                        <img class="check" src="assets/check-course.svg" />
+                        <div class="div16">
+                            Сертифікат про проходження курсу українською та англійською
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-start-course" routerLink="/course-menu">
+                <div class="div17">РОЗПОЧАТИ НАВЧАННЯ</div>
+            </div>
+        </div>
+        <button class="scroll-to-top" [class.visible]="showScrollButton" (click)="scrollToTop()">
+            <img class="back-logo-up" src="assets/back-logo.svg" />
+        </button>
+    </div>
+</div>

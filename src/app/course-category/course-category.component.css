@@ -178,24 +178,6 @@
     filter: blur(124.4px);
 }
 
-.learning2 {
-    background: #ffffff;
-    border-radius: 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(180deg, rgba(53, 93, 170, 1.00) 0%, rgba(110, 144, 255, 1.00) 100%);
-    border-image-slice: 1;
-    padding: 48px;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex: 1;
-    max-width: 1600px;
-    position: relative;
-    overflow: hidden;
-}
 
 .learning2 {
     background:
@@ -203,7 +185,7 @@
         linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
 
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 48px;
 
     display: flex;

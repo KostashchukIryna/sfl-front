@@ -126,7 +126,7 @@
     width: 140px;
     height: 38px;
     align-items: center;
-    gap: 12.36px;
+    gap: 12px;
     position: relative;
 }
 
@@ -279,6 +279,15 @@
     margin-right: 8px;
     position: relative;
     flex: 0 0 auto;
+}
+
+.sign-up .input-icon-eye {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    cursor: pointer;
 }
 
 .sign-up .img {

@@ -1,0 +1,1332 @@
+.course-landing,
+.course-landing * {
+    box-sizing: border-box;
+}
+
+.course-landing {
+    background: #cfd6e2;
+    padding: 24px 48px 24px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: auto;
+}
+
+.background {
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    max-width: 1600px;
+    position: relative;
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+.decoration2 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 708px;
+    top: 473px;
+    filter: blur(124.4px);
+}
+
+.decoration3 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 108px;
+    top: 716px;
+    filter: blur(124.4px);
+}
+
+.decoration4 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1078px;
+    top: 132px;
+    filter: blur(124.4px);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.navbar {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.back {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.label-course-name {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div2 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.hero-section {
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 420px;
+    position: relative;
+}
+
+.bars-and-stars {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.bars {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-164 {
+    background: var(--decoration, #dbebf8);
+    border-radius: 12px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div3 {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--p-font-family, "MontserratAlternates-Regular", sans-serif);
+    font-size: var(--p-font-size, 16px);
+    line-height: var(--p-line-height, 140%);
+    font-weight: var(--h3-font-weight, 400);
+    position: relative;
+}
+
+.frame-165 {
+    background: var(--decoration, #dbebf8);
+    border-radius: 12px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-166 {
+    background: var(--decoration, #dbebf8);
+    border-radius: 12px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-167 {
+    background: var(--decoration, #dbebf8);
+    border-radius: 12px;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.rating {
+    background: var(--white-text, #f9fbff);
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #414d87;
+    border-width: 1px;
+    padding: 4px 12px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.label-star {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h4-font-family, "MontserratAlternates-Regular", sans-serif);
+    font-size: var(--h3-font-size, 16px);
+    line-height: var(--h4-line-height, 140%);
+    font-weight: var(--h4-font-weight, 400);
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.program-course {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 12px 8px 12px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 0;
+    width: 242px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.program-course:hover {
+    transform: scale(1.05);
+    background: var(--secondary);
+}
+
+
+.div4 {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h4-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 700);
+    position: relative;
+    width: 226px;
+}
+
+.start-course {
+    background: var(--tertiary, #5080e2);
+    border-radius: 12px;
+    padding: 12px 8px 12px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: 0;
+    width: 242px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.start-course:hover {
+    transform: scale(1.05);
+    background: var(--secondary);
+}
+
+.autolayout-course-about {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-about {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div5 {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.about-course {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 32px 120px 32px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div6 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.who-need {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div7 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.who-need-text {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 32px 120px 32px 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-modules {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-items {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.module-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+._1 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.img {
+    border-radius: 12px;
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.module-fucntions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.module-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div8 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    flex: 1;
+}
+
+.elements-module {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.article {
+    background: var(--white-text, #f9fbff);
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+._12 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+}
+
+.lection {
+    background: var(--white-text, #f9fbff);
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.test {
+    background: var(--primary, #355daa);
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div9 {
+    color: var(--white-text, #f9fbff);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+}
+
+.module-card2 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+._2 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+._22 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+}
+
+.module-card3 {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+._3 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+._32 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.list-benefits {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 64px 24px 64px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    row-gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star-benefit {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.label-benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 287px;
+    position: relative;
+}
+
+.div10 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.div11 {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h4-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-184 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+.frame-185 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-186 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-187 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-188 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.decoration5 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1021px;
+    top: 762px;
+    filter: blur(124.4px);
+}
+
+.decoration6 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.28;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1021px;
+    top: 2436px;
+    filter: blur(124.4px);
+}
+
+.decoration7 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: -53px;
+    top: 961px;
+    filter: blur(124.4px);
+}
+
+.decoration8 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: -53px;
+    top: 1756px;
+    filter: blur(124.4px);
+}
+
+.decoration9 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.28;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: -53px;
+    top: 2635px;
+    filter: blur(124.4px);
+}
+
+.decoration10 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 925px;
+    top: 1543px;
+    filter: blur(124.4px);
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-reviews {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.autolayout-reviews {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 38px 86px 38px 86px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.rating2 {
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.average-score {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--sub-font-family,
+            "MontserratAlternates-Medium",
+            sans-serif);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--sub-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.star {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.score-star {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    width: 22px;
+    height: 40px;
+}
+
+.list-reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.review {
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 265px;
+    height: 262px;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-up {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.avatar-star {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.avatar-img {
+    background: linear-gradient(to left, #d9d9d9, #d9d9d9);
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;
+    position: relative;
+    object-fit: cover;
+}
+
+.autolayout-stars {
+    background: var(--white-text, #f9fbff);
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #414d87;
+    border-width: 1px;
+    padding: 4px 12px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star-rating-label {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.star-review-personal {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.name-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.div12 {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--sub-font-family,
+            "MontserratAlternates-Medium",
+            sans-serif);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--sub-font-weight, 500);
+    position: relative;
+    width: 141px;
+}
+
+.date-review {
+    color: var(--grey-text, #848ca9);
+    text-align: left;
+    font-family: var(--sub-font-family,
+            "MontserratAlternates-Medium",
+            sans-serif);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--sub-font-weight, 500);
+    position: relative;
+}
+
+.review-text {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--sub-font-family,
+            "MontserratAlternates-Medium",
+            sans-serif);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--sub-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.star3 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div14 {
+    text-align: left;
+    font-family: var(--sub-font-family, "-", sans-serif);
+    font-size: var(--sub-font-size, 12px);
+    line-height: var(--sub-line-height, 150%);
+    font-weight: var(--sub-font-weight, 400);
+    position: relative;
+    align-self: stretch;
+}
+
+.div-14-span {
+    color: var(--secondary, #223f78);
+    font-family: var(--sub-font-family,
+            "MontserratAlternates-Medium",
+            sans-serif);
+    font-weight: var(--sub-font-weight, 500);
+}
+
+.div-14-span2 {
+    color: var(--tertiary, #5080e2);
+    font-family: var(--sub-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-weight: var(--sub-font-weight, 700);
+    text-decoration: underline;
+}
+
+.access-to-course {
+    background:
+        linear-gradient(var(--secondary, #dbebf8), var(--secondary, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 8px solid transparent;
+    border-radius: 12px;
+    padding: 32px 48px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.autolayout-access {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.autolayout-access-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.checker-course {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div15 {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.list-course-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.course-text {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.check {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.div16 {
+    color: #ffffff;
+    text-align: left;
+    font-family: var(--h4-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
+.button-start-course {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 12px 8px 12px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-start-course:hover {
+    transform: scale(1.05);
+    background: var(--tertiary);
+}
+
+.div17 {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h4-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 700);
+    position: relative;
+    flex: 1;
+}
+
+.back-logo-up {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+    transform: rotate(90deg);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 3px solid transparent;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 3px solid transparent;
+    border-radius: 12px;
+}
