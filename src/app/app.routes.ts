@@ -7,6 +7,7 @@ import { ModuleMenuComponent } from './module-menu/module-menu.component';
 import { ArticleComponent } from './article/article.component';
 import { TestComponent } from './test/test.component';
 import { CourseLandingComponent } from './course-landing/course-landing.component';
+import { AccountComponent } from './account/account.component';
 
 export const routes: Routes = [
   {
@@ -53,6 +54,15 @@ export const routes: Routes = [
       { path: 'article', component: ArticleComponent },
       { path: 'test', component: TestComponent },
       { path: 'course-landing', component: CourseLandingComponent },
+    ]
+  },
+
+  {
+    path: 'settings',
+    children: [
+      { path: '', redirectTo: 'account', pathMatch: 'full' },
+      { path: 'account', component: AccountComponent },
+      { path: 'notifications', component: AccountComponent },
     ]
   },
 ];

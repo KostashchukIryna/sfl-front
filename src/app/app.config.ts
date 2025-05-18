@@ -10,16 +10,16 @@ export const API_URL = new InjectionToken<string>('API_URL');;
 
 export const appConfig: ApplicationConfig = {
   providers: [
-                provideZoneChangeDetection({ eventCoalescing: true }),
-                provideRouter(routes), 
-                provideServiceWorker('ngsw-worker.js', 
-                {
-                  enabled: !isDevMode(),
-                  registrationStrategy: 'registerWhenStable:30000'
-                }),
-                provideHttpClient(), 
-                { provide: API_URL, useValue: 'http://localhost:8080/' }
-              ]
+    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideRouter(routes),
+    provideServiceWorker('ngsw-worker.js',
+      {
+        enabled: !isDevMode(),
+        registrationStrategy: 'registerWhenStable:30000'
+      }),
+    provideHttpClient(),
+    { provide: API_URL, useValue: 'http://localhost:8080/' }
+  ]
 };
 
 

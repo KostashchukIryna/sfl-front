@@ -28,8 +28,14 @@
 
         </div>
         <div class="down-bar-list">
-            <img class="sidebar-icons" src="assets/notifications.svg" alt="Про нас" />
-            <img class="sidebar-icons" src="assets/account.svg" alt="Про нас" />
+            <div class="block-elements" routerLink="/settings/notifications" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: false }">
+                <img class="sidebar-icons" src="assets/notifications.svg" alt="Сповіщення" />
+            </div>
+            <div class="block-elements" routerLink="/settings/account" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: false }">
+                <img class="sidebar-icons" src="assets/account.svg" alt="Акаунт" />
+            </div>
         </div>
         <div class="decoration">
         </div>

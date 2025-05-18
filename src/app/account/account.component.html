@@ -1,0 +1,90 @@
+<div class="account">
+    <app-sidebar></app-sidebar>
+
+    <div class="user-account">
+        <div class="decoration2"></div>
+        <div class="decoration3"></div>
+        <div class="navbar">
+            <img class="back" src="assets/back-logo.svg" />
+        </div>
+
+        <form [formGroup]="profileForm" class="about-user">
+            <div class="label-information">Загальна інформація</div>
+
+            <div class="avatar-block">
+                <img class="avatar" [src]="avatarUrl" alt="Avatar" />
+                <div class="replace-text" (click)="fileInput.click()">Замінити фото</div>
+                <input type="file" #fileInput accept="image/*" hidden (change)="onFileSelected($event)" />
+            </div>
+            <div class="personal-block">
+
+                <div class="change-email-login">
+                    <div class="label-change-email-login">Зміна логіну та email</div>
+                    <div class="autolayout-change-email">
+
+                        <div class="login-full">
+                            <div class="label-login">Логін</div>
+                            <div class="input-class">
+                                <img class="account-circle2" src="assets/username.svg" alt="Username icon" />
+                                <input type="text" formControlName="username" placeholder="Придумайте логін" required />
+                                <div class="empty-icon">
+                                    <div class="rectangle-13"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="email-full">
+                            <div class="label-email">Електронна пошта</div>
+                            <div class="input-class">
+                                <img class="email" src="assets/email.svg" alt="Email icon" />
+                                <input type="email" formControlName="email" placeholder="Наприклад, user@gmail.com"
+                                    required />
+                                <div class="empty-icon">
+                                    <div class="rectangle-13"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="change-password">
+                    <div class="label-password">Зміна паролю</div>
+                    <div class="autolayout-password">
+
+                        <div class="password">
+                            <div class="password-label">Введіть новий пароль</div>
+                            <div class="input-class">
+                                <img class="key" src="assets/key.svg" alt="Key icon" />
+                                <input [type]="passwordVisible ? 'text' : 'password'" formControlName="password"
+                                    placeholder="Введіть пароль" />
+                                <img class="icon-eye-closed" (click)="togglePassword()"
+                                    [src]="passwordVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg'" />
+                            </div>
+                        </div>
+
+                        <div class="repeat-password">
+                            <div class="password-label-repeat">Повторіть новий пароль</div>
+                            <div class="input-class">
+                                <img class="key2" src="assets/key.svg" alt="Key icon" />
+                                <input [type]="confirmVisible ? 'text' : 'password'" formControlName="confirmPassword"
+                                    placeholder="Повторіть введений пароль" />
+                                <img class="icon-eye-open" (click)="toggleConfirm()"
+                                    [src]="confirmVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg'" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="button-save">
+                    <div class="save-changes">ЗБЕРЕГТИ ЗМІНИ</div>
+                </button>
+            </div>
+
+            <button class="button-logout">
+                <div class="logout-label">ВИЙТИ З АКАУНТУ</div>
+            </button>
+        </form>
+    </div>
+</div>

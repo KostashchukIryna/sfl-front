@@ -1,0 +1,577 @@
+.account,
+.account * {
+    box-sizing: border-box;
+}
+
+.account {
+    background: #cfd6e2;
+    padding: 24px 48px 24px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: auto;
+}
+
+.user-account {
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.decoration2 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 660px;
+    top: 425px;
+    filter: blur(124.4px);
+}
+
+.decoration3 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1030px;
+    top: 84px;
+    filter: blur(124.4px);
+}
+
+.navbar {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.back {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.about-user {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 732px;
+    position: relative;
+    overflow: hidden;
+}
+
+.label-information {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 36px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.avatar-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 100px;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.replace-text {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h4-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    text-decoration: underline;
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.replace-text:hover {
+    transform: scale(1.05);
+}
+
+.personal-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.change-email-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-change-email-login {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.autolayout-change-email {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.login-full {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-login {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.input-class {
+    background: #ffffff;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(54, 79, 178, 0.01);
+    border-width: 1px;
+    padding: 12px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-class input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-right: 0;
+    font-family: var(--p-font-family);
+    font-size: var(--p-font-size);
+    color: var(--secondary);
+    outline: none;
+    width: 100%;
+}
+
+.placeholder-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.account-circle2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.placeholder {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h4-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h4-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+}
+
+.empty-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.rectangle-13 {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    top: 0%;
+}
+
+.email-full {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-email {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.input-email {
+    background: #ffffff;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(54, 79, 178, 0.01);
+    border-width: 1px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.email {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.change-password {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-password {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.autolayout-password {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.password-label {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.input-password {
+    background: #ffffff;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(54, 79, 178, 0.01);
+    border-width: 1px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.key {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.placeholder2 {
+    color: var(--grey-text, #848ca9);
+    text-align: left;
+    font-family: var(--p-font-family, "MontserratAlternates-Regular", sans-serif);
+    font-size: var(--p-font-size, 16px);
+    line-height: var(--p-line-height, 140%);
+    font-weight: var(--p-font-weight, 400);
+    position: relative;
+}
+
+.icon-eye-closed {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.repeat-password {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.password-label-repeat {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.input-password-repeat {
+    background: #ffffff;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(54, 79, 178, 0.01);
+    border-width: 1px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.key2 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.icon-eye-open {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.button-save {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-save:hover {
+    transform: scale(1.03);
+    background-color: var(--tertiary);
+}
+
+.save-changes {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--p-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
+.button-logout {
+    border-radius: 12px;
+    border: 2px solid;
+    border-color: var(--error, #aa3535);
+    background-color: var(--decoration);
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-logout:hover {
+    transform: scale(1.03);
+    background-color: var(--error);
+    color: var(--white-text);
+}
+
+.logout-label {
+    color: var(--error, #aa3535);
+    text-align: center;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    width: 232px;
+}
+
+.button-logout:hover .logout-label {
+    color: var(--white-text);
+}
