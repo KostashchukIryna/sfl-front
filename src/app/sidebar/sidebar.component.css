@@ -117,7 +117,7 @@
     background-color: #BBE0F9;
     border-radius: 12px;
     padding: 8px;
-    transition: background-color 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -128,8 +128,15 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 48px;
+    width: 100px;
     position: relative;
+}
+
+.down-bar-list .block-elements.active {
+    background-color: #BBE0F9;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.4s ease-in-out;
 }
 
 .decoration {

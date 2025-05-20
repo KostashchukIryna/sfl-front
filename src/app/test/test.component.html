@@ -1,0 +1,140 @@
+<div class="test">
+    <app-sidebar></app-sidebar>
+    <div class="test-page">
+        <div class="decoration2"></div>
+        <div class="decoration3"></div>
+        <div class="navbar">
+            <img class="back" src="assets/back-logo.svg" />
+            <div class="frame-266">
+                <div class="remaining-time">
+                    <img class="clock-icon" src="assets/clock-icon.svg" />
+                    <div class="div2">Залишилось часу:</div>
+                </div>
+                <div class="timer">{{ displayTimer }}</div>
+            </div>
+        </div>
+
+        <div class="main-test" *ngIf="!started">
+            <div class="test-description">
+                <div class="test-label">Тест</div>
+                <div class="test-autolayout">
+                    <div class="course-label">🧭 Основи виживання в місті</div>
+                    <div class="div3">Вступ до тесту</div>
+                    <div class="description">
+                        Попереду вас чекає 10 питань, що допоможуть перевірити,
+                        наскільки уважно ви вивчили матеріал і чи готові діяти правильно
+                        в екстрених умовах.
+                        <br /><br />
+                        Зверніть увагу:
+                        <br />
+                        <ul class="description-span2">
+                            <li>Не оновлюйте сторінку під час проходження тесту.</li>
+                            <li>Тест можна активувати лише один раз.</li>
+                            <li>
+                                На кожне питання буде відведено 1 хвилина — цього достатньо,
+                                аби все обдумати.
+                            </li>
+                            <li>
+                                Для успішного завершення модуля потрібно дати правильні
+                                відповіді хоча б на 7 з 10 питань.
+                            </li>
+                        </ul>
+                        Це не просто теорія — ці знання реально можуть врятувати вас або
+                        ваших близьких.
+                        <br /><br />
+                        Готові? Тоді вперед — почнімо!
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <div class="test-button" (click)="startTest()">РОЗПОЧАТИ ТЕСТ</div>
+            </div>
+        </div>
+
+        <div class="test-questions" *ngIf="started && currentIndex < questions.length">
+            <div class="number-question">
+                Питання {{ currentIndex + 1 }} з {{ questions.length }}
+            </div>
+
+            <div class="auto-layout-answers">
+                <div class="question">
+                    {{ questions[currentIndex].question }}
+                </div>
+
+                <div class="answers-autolayot">
+                    <label class="answer" *ngFor="let opt of questions[currentIndex].options; let i = index">
+                        <input type="radio" [name]="'q' + currentIndex" [(ngModel)]="userAnswers[currentIndex]"
+                            [value]="i" />
+                        <span class="label-text">{{ opt }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button-next">
+                <button class="next-question-button" (click)="goToNext()" [disabled]="userAnswers[currentIndex] < 0">
+                    НАСТУПНЕ ПИТАННЯ
+                </button>
+            </div>
+        </div>
+
+        <div class="total-scores" *ngIf="started && currentIndex >= questions.length && correctCount >= passingScore">
+            <div class="label-test">Тест завершено!</div>
+            <div class="correct-answers">
+                <div class="question-end">Правильних відповідей:</div>
+                <div class="total-scores-end">
+                    {{ correctCount }} / {{ questions.length }}
+                </div>
+            </div>
+            <div class="review-answers" *ngIf="started && currentIndex >= questions.length">
+                <div class="label-correct-answers">Огляд відповідей</div>
+                <ng-container *ngFor="let q of questions; let idx = index">
+                    <div class="auto-layout-answers">
+                        <div class="question">
+                            {{ idx + 1 }}. {{ q.question }}
+                        </div>
+
+                        <div class="answers-autolayot">
+                            <label class="answer" *ngFor="let opt of q.options; let i = index"
+                                [class.correct]="i === q.correctAnswerIndex"
+                                [class.incorrect]="userAnswers[idx] === i && i !== q.correctAnswerIndex">
+                                <input type="radio" [name]="'review' + idx" [checked]="i === userAnswers[idx]"
+                                    disabled />
+                                <span class="label-text">{{ opt }}</span>
+                            </label>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="total-scores-fail"
+            *ngIf="started && currentIndex >= questions.length && correctCount < passingScore">
+            <div class="label-text-fail">
+                Тест завершено!
+            </div>
+            <div class="fail">
+                <div class="question-fail">
+                    Правильних відповідей:
+                </div>
+                <div class="correct-answers-fail">
+                    {{ correctCount }} / {{ questions.length }}
+                </div>
+            </div>
+            <div class="label-unfortunately">
+                На жаль, цього недостатньо.
+                <br />
+                Щоб успішно пройти тест, необхідно набрати щонайменше: {{ passingScore }} / {{ questions.length }}
+            </div>
+            <div class="button-again">
+                <div class="repeat-button" (click)="retakeTest()">
+                    ПРОЙТИ ТЕСТ ЩЕ РАЗ
+                </div>
+            </div>
+
+            <div class="comeback-to-module">
+                Повернутися до модуля
+            </div>
+        </div>
+
+    </div>
+</div>

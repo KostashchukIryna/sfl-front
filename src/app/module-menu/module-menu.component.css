@@ -371,15 +371,20 @@
     flex-shrink: 0;
     height: 370px;
     position: relative;
-    transition: all 0.2s ease;
     cursor: pointer;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box;
+    transition: transform 0.3s ease;
 }
 
 .lection:hover {
     transform: scale(1.05);
-    background-color: var(--white-text);
-    border-radius: 12px;
-    padding: 12px
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
 }
 
 .video-section {
@@ -471,15 +476,21 @@
     flex-shrink: 0;
     position: relative;
     cursor: pointer;
-    transition: all 0.2s ease;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box;
+
+    transition: transform 0.3s ease;
 }
 
 .article-1:hover {
     transform: scale(1.05);
-    border-radius: 12px;
-    padding: 8px;
-    background-color: var(--white-text);
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
 }
+
 
 .icon-done-lection {
     flex-shrink: 0;
