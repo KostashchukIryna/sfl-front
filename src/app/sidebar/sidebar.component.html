@@ -7,20 +7,20 @@
             </div>
 
             <div class="list-of-elements">
-                <div class="block-elements" [class.active]="isSidebarSelected('Медіа')"
-                    (click)="selectSidebarSection('Медіа')">
+                <div class="block-elements" routerLink="/media" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: false }">
                     <img class="sidebar-icons" src="assets/media.svg" alt="Медіа" />
                     <div class="div">Медіа</div>
                 </div>
 
-                <div class="block-elements" [class.active]="isSidebarSelected('Навчання')"
-                    (click)="selectSidebarSection('Навчання')">
+                <div class="block-elements" routerLink="/learning" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: false }">
                     <img class="sidebar-icons" src="assets/learning.svg" alt="Навчання" />
                     <div class="div">Навчання</div>
                 </div>
 
-                <div class="block-elements" [class.active]="isSidebarSelected('Про нас')"
-                    (click)="selectSidebarSection('Про нас')">
+                <div class="block-elements" routerLink="/about-us" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: false }">
                     <img class="sidebar-icons" src="assets/info.svg" alt="Про нас" />
                     <div class="div">Про нас</div>
                 </div>
@@ -28,8 +28,14 @@
 
         </div>
         <div class="down-bar-list">
-            <img class="sidebar-icons" src="assets/notifications.svg" alt="Про нас" />
-            <img class="sidebar-icons" src="assets/account.svg" alt="Про нас" />
+            <div class="block-elements" routerLink="/settings/notifications" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: false }">
+                <img class="sidebar-icons" src="assets/notifications.svg" alt="Сповіщення" />
+            </div>
+            <div class="block-elements" routerLink="/settings/account" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: false }">
+                <img class="sidebar-icons" src="assets/account.svg" alt="Акаунт" />
+            </div>
         </div>
         <div class="decoration">
         </div>

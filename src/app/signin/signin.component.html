@@ -17,17 +17,13 @@
           />
           <img class="SFL" src="assets/SFL.svg" />
         </div>
-        <form
-          class="autolayout"
-          [formGroup]="form"
-          (ngSubmit)="onSubmit()"
-        >
+
+        <form class="autolayout" [formGroup]="form" (ngSubmit)="onSubmit()">
           <div class="label">Вхід до акаунту</div>
           <div class="registration-form">
             <div class="registration-form-2">
               <div class="registration-form-3">
                 <div class="registration-form-4">
-
                   <div class="div-2">
                     <div class="text-wrapper">Електронна пошта</div>
                     <div class="input">
@@ -62,15 +58,19 @@
                       />
                       <img
                         class="input-icon-eye"
-                        src="{{ passwordVisible ? 'assets/icon-eye-open.svg' : 'assets/icon-eye-closed.svg' }}"
+                        src="{{
+                          passwordVisible
+                            ? 'assets/icon-eye-open.svg'
+                            : 'assets/icon-eye-closed.svg'
+                        }}"
                         (click)="togglePassword()"
                       />
                     </div>
                   </div>
-
                 </div>
+
                 <div class="link">
-                  <a routerLink="/login" class="login-label">
+                  <a routerLink="/forgot-password" class="login-label">
                     <div class="text-wrapper-2">Відновити пароль</div>
                   </a>
                 </div>
@@ -83,7 +83,7 @@
 
             <div class="link-to-registration">
               <div class="text-wrapper-account">Не маєте акаунта?</div>
-              <a routerLink="/login" class="login-label">
+              <a routerLink="/signup" class="login-label">
                 <div class="text-wrapper-sign-up">Зареєструватись</div>
               </a>
             </div>

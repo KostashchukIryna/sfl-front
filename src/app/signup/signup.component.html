@@ -7,13 +7,11 @@
     <div class="decoration-3"></div>
     <div class="decoration-4"></div>
     <img class="back-logo" src="assets/back-logo.svg" />
-
     <div class="autolayout-form">
       <div class="logo">
         <img class="alarm-icon" [src]="currentIcon" [class.fade-out]="fading" alt="Alarm" />
         <img class="SFL" src="assets/SFL.svg" />
       </div>
-
       <div class="autolayout" [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="label">Реєстрація акаунту</div>
 
@@ -46,7 +44,7 @@
                     <img class="input-icon" src="assets/key.svg" alt="Key icon" />
                     <input [type]="passwordVisible ? 'text' : 'password'" formControlName="password"
                       placeholder="Введіть пароль" required />
-                    <img class="input-icon" src="{{
+                    <img class="input-icon-eye" src="{{
                             passwordVisible
                               ? 'assets/icon-eye-open.svg'
                               : 'assets/icon-eye-closed.svg'
@@ -60,7 +58,7 @@
                     <img class="input-icon" src="assets/key.svg" alt="Key icon" />
                     <input [type]="confirmVisible ? 'text' : 'password'" formControlName="confirmPassword"
                       placeholder="Повторіть введений пароль" required />
-                    <img class="input-icon" src="{{
+                    <img class="input-icon-eye" src="{{
                             confirmVisible
                               ? 'assets/icon-eye-open.svg'
                               : 'assets/icon-eye-closed.svg'

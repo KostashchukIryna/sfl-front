@@ -6,11 +6,11 @@ body {
     --additional: rgba(14, 30, 62, 1);
     --black-text: rgba(27, 29, 32, 1);
     --decoration: rgba(219, 235, 248, 1);
-    --error: rgba(245, 39, 32, 1);
+    --error: rgb(104, 72, 70);
     --extra: rgba(237, 241, 248, 1);
     --grey-text: rgba(132, 140, 169, 1);
     --h-1-font-family: "Montserrat Alternates", Helvetica;
-    --h-1-font-size: 36px;
+    --h-1-font-size: 32px;
     --h-1-font-style: normal;
     --h-1-font-weight: 700;
     --h-1-letter-spacing: 0px;
@@ -68,7 +68,7 @@ body {
     --white-text: #f9fbff;
     --success: #4caf50;
     --warning: #f4e439;
-    --error: #f52720;
+    --error: #aa3535;
     --grey-text: #848ca9;
     --decoration: #dbebf8;
     --extra: #edf1f8;
@@ -77,7 +77,7 @@ body {
             rgba(110, 144, 255, 1) 100%);
 
     --h1-font-family: "Montserrat Alternates", Helvetica;
-    --h1-font-size: 36px;
+    --h1-font-size: 32px;
     --h1-line-height: 130%;
     --h1-font-weight: 700;
     --h1-font-style: normal;
