@@ -181,7 +181,7 @@
 
 .learning2 {
     background:
-        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(var(--white-text), var(--white-text)) padding-box,
         linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
 
     border: 2px solid transparent;

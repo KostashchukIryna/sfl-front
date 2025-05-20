@@ -10,7 +10,7 @@ body {
     --extra: rgba(237, 241, 248, 1);
     --grey-text: rgba(132, 140, 169, 1);
     --h-1-font-family: "Montserrat Alternates", Helvetica;
-    --h-1-font-size: 36px;
+    --h-1-font-size: 32px;
     --h-1-font-style: normal;
     --h-1-font-weight: 700;
     --h-1-letter-spacing: 0px;
@@ -77,7 +77,7 @@ body {
             rgba(110, 144, 255, 1) 100%);
 
     --h1-font-family: "Montserrat Alternates", Helvetica;
-    --h1-font-size: 36px;
+    --h1-font-size: 32px;
     --h1-line-height: 130%;
     --h1-font-weight: 700;
     --h1-font-style: normal;

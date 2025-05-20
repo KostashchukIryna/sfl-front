@@ -1,4 +1,4 @@
-import { ApplicationConfig, provideZoneChangeDetection, isDevMode } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection, isDevMode, importProvidersFrom } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { InjectionToken } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
@@ -21,5 +21,16 @@ export const appConfig: ApplicationConfig = {
     { provide: API_URL, useValue: 'http://localhost:8080/' }
   ]
 };
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+
+bootstrapApplication(AppComponent, {
+  providers: [
+    importProvidersFrom(BrowserAnimationsModule)
+  ]
+});
+
 
 

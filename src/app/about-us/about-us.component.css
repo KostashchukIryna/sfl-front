@@ -1,0 +1,861 @@
+.about-us {
+    background: #cfd6e2;
+    padding: 24px 48px 24px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.about-us-page {
+    background:
+        linear-gradient(var(--white-text), var(--white-text)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.decoration2 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 660px;
+    top: 425px;
+    filter: blur(124.4px);
+}
+
+.decoration3 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 1030px;
+    top: 84px;
+    filter: blur(124.4px);
+}
+
+.navbar {
+    background:
+        linear-gradient(var(--decoration), var(--decoration)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.back {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+}
+
+.logo-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.logo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 336px;
+    height: 94px;
+    position: relative;
+}
+
+.vector2 {
+    flex-shrink: 0;
+    width: 89.19px;
+    height: 89.19px;
+    position: relative;
+    overflow: visible;
+}
+
+.sfl2 {
+    flex-shrink: 0;
+    width: 217.65px;
+    height: 95.31px;
+    position: relative;
+    overflow: visible;
+}
+
+.slogan {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.mission-text {
+    background: var(--secondary, #223f78);
+    border-radius: 12px;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.mission-label {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    flex: 1;
+}
+
+.text-mission {
+    background:
+        linear-gradient(var(--decoration), var(--decoration)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.div-mission {
+    color: var(--secondary, #223f78);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.div-mission2 {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.div-mission3 {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.push {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.decoration4 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 915px;
+    top: 550px;
+    filter: blur(124.4px);
+}
+
+.decoration5 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 523px;
+    top: -123px;
+    filter: blur(124.4px);
+}
+
+.propose {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.propose-text {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.propose-label {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    flex: 1;
+}
+
+.text-propose {
+    background:
+        linear-gradient(var(--decoration), var(--decoration)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-access {
+    color: var(--secondary, #223f78);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.div2 {
+    color: var(--primary, #355daa);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-273 {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-271 {
+    background: var(--secondary, #223f78);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.div3 {
+    color: var(--white-text, #f9fbff);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-272 {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-2732 {
+    background: var(--tertiary, #5080e2);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-274 {
+    background: var(--secondary, #223f78);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-275 {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-276 {
+    background: var(--tertiary, #5080e2);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.decoration6 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: 952px;
+    top: 238px;
+    filter: blur(124.4px);
+}
+
+.decoration7 {
+    background: var(--secondary, #223f78);
+    border-radius: 50%;
+    opacity: 0.33;
+    flex-shrink: 0;
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    left: -123px;
+    top: -82px;
+    filter: blur(124.4px);
+}
+
+.our-valuable {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.value {
+    background: var(--tertiary, #5080e2);
+    border-radius: 12px;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.value-label {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    flex: 1;
+}
+
+.text-value {
+    background:
+        linear-gradient(var(--decoration), var(--decoration)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-security {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-security {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-security {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-access {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-access {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-access2 {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-simple {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-simple {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-simple {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-tech {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-tech {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-tech {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-communication {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-communication {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-communication {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.frame-support {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-support {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+    align-self: stretch;
+}
+
+.text-support {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h3-font-family, "MontserratAlternates-Medium", sans-serif);
+    font-size: var(--h3-font-size, 20px);
+    line-height: var(--h3-line-height, 140%);
+    font-weight: var(--h3-font-weight, 500);
+    position: relative;
+    align-self: stretch;
+}
+
+.final-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.label-help {
+    color: var(--primary, #355daa);
+    text-align: left;
+    font-family: var(--h1-font-family, "MontserratAlternates-Bold", sans-serif);
+    font-size: var(--h1-font-size, 32px);
+    line-height: var(--h1-line-height, 130%);
+    font-weight: var(--h1-font-weight, 700);
+    position: relative;
+}
+
+.text-final {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.sft-text {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.encourage-text {
+    color: var(--additional, #0e1e3e);
+    text-align: left;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    align-self: stretch;
+}
+
+.button-look-courses {
+    background: var(--primary, #355daa);
+    border-radius: 12px;
+    padding: 16px 24px 16px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 620px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button-look-courses:hover {
+    background: var(--tertiary, #355daa);
+    transform: scale(1.05);
+}
+
+.look-courses {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h2-font-family,
+            "MontserratAlternates-SemiBold",
+            sans-serif);
+    font-size: var(--h2-font-size, 24px);
+    line-height: var(--h2-line-height, 140%);
+    font-weight: var(--h2-font-weight, 600);
+    position: relative;
+    flex: 1;
+}
+
+.back-logo-up {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    overflow: visible;
+    aspect-ratio: 1;
+    transform: rotate(90deg);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:
+        linear-gradient(var(--white-text, #dbebf8), var(--white-text, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 3px solid transparent;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+    background:
+        linear-gradient(var(--decoration, #dbebf8), var(--decoration, #dbebf8)) padding-box,
+        linear-gradient(180deg, rgba(53, 93, 170, 1), rgba(110, 144, 255, 1)) border-box;
+    border: 3px solid transparent;
+    border-radius: 12px;
+}

@@ -249,13 +249,11 @@
     border: 1px solid;
     border-color: #364fb203;
     transition: border-color 0.2s ease-in-out;
-    /* плавний перехід */
 }
 
 .sign-up .input:hover,
 .sign-up .input:focus-within {
     border-color: var(--primary);
-    /* або напряму: #355daa */
 }
 
 
@@ -268,6 +266,7 @@
     margin-right: 0;
     font-family: var(--p-font-family);
     font-size: var(--p-font-size);
+    font-weight: var(--h3-font-weight);
     color: var(--black-text);
     outline: none;
     width: 100%;

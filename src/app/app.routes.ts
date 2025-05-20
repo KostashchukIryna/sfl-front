@@ -8,6 +8,8 @@ import { ArticleComponent } from './article/article.component';
 import { TestComponent } from './test/test.component';
 import { CourseLandingComponent } from './course-landing/course-landing.component';
 import { AccountComponent } from './account/account.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RestorePasswordComponent } from './restore-password/restore-password.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +18,7 @@ export const routes: Routes = [
       { path: '', redirectTo: 'signin', pathMatch: 'full' },
       { path: 'signin', component: SigninComponent },
       { path: 'signup', component: SignupComponent },
+      { path: 'restore-password', component: RestorePasswordComponent },
     ]
   },
   {
@@ -45,16 +48,7 @@ export const routes: Routes = [
   },
 
   {
-    path: 'about-us',
-    children: [
-      { path: '', redirectTo: 'article', pathMatch: 'full' },
-      { path: 'course-category', component: CourseCategoryComponent },
-      { path: 'course-menu', component: CourseMenuComponent },
-      { path: 'module-menu', component: ModuleMenuComponent },
-      { path: 'article', component: ArticleComponent },
-      { path: 'test', component: TestComponent },
-      { path: 'course-landing', component: CourseLandingComponent },
-    ]
+    path: 'about-us', component: AboutUsComponent
   },
 
   {

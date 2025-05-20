@@ -236,6 +236,12 @@
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input-class:hover,
+.input-class:focus-within {
+    border-color: var(--primary);
 }
 
 .input-class input {
@@ -246,6 +252,7 @@
     margin-right: 0;
     font-family: var(--p-font-family);
     font-size: var(--p-font-size);
+    font-weight: var(--h3-font-weight);
     color: var(--secondary);
     outline: none;
     width: 100%;
