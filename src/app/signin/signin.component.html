@@ -6,7 +6,6 @@
     <div class="final-autolayout">
       <div class="decoration-3"></div>
       <div class="decoration-4"></div>
-      <img class="back-logo" src="assets/back-logo.svg" />
       <div class="autolayout-form">
         <div class="logo">
           <img class="alarm-icon" [src]="currentIcon" [class.fade-out]="fading" alt="Alarm" />
@@ -43,7 +42,7 @@
                 </div>
 
                 <div class="link">
-                  <a routerLink="/forgot-password" class="login-label">
+                  <a routerLink="/auth/restore-password" class="login-label">
                     <div class="text-wrapper-2">Відновити пароль</div>
                   </a>
                 </div>
@@ -56,7 +55,7 @@
 
             <div class="link-to-registration">
               <div class="text-wrapper-account">Не маєте акаунта?</div>
-              <a routerLink="/signup" class="login-label">
+              <a routerLink="/auth/signup" class="login-label">
                 <div class="text-wrapper-sign-up">Зареєструватись</div>
               </a>
             </div>

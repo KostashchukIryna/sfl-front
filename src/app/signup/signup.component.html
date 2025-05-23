@@ -6,15 +6,14 @@
   <div class="final-autolayout">
     <div class="decoration-3"></div>
     <div class="decoration-4"></div>
-    <img class="back-logo" src="assets/back-logo.svg" />
     <div class="autolayout-form">
       <div class="logo">
         <img class="alarm-icon" [src]="currentIcon" [class.fade-out]="fading" alt="Alarm" />
         <img class="SFL" src="assets/SFL.svg" />
       </div>
-      <div class="autolayout" [formGroup]="form" (ngSubmit)="onSubmit()">
-        <div class="label">Реєстрація акаунту</div>
 
+      <form class="autolayout" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="label">Реєстрація акаунту</div>
         <div class="registration-form">
           <div class="registration-form-2">
             <div class="registration-form-3">
@@ -36,19 +35,39 @@
                     <input type="email" formControlName="email" placeholder="Наприклад, user@gmail.com" required />
                     <div class="empty-icon"></div>
                   </div>
+                  <div *ngIf="f['email'].errors?.['emailTaken'] && f['email'].touched" class="error-popup">
+                    Такий email вже існує, спробуйте увійти.
+                  </div>
                 </div>
+
+
 
                 <div class="div-2">
                   <div class="text-wrapper">Пароль</div>
                   <div class="input">
                     <img class="input-icon" src="assets/key.svg" alt="Key icon" />
                     <input [type]="passwordVisible ? 'text' : 'password'" formControlName="password"
-                      placeholder="Введіть пароль" required />
+                      placeholder="Введіть пароль" required (focus)="showPasswordRules = true"
+                      (blur)="showPasswordRules = false" />
                     <img class="input-icon-eye" src="{{
-                            passwordVisible
-                              ? 'assets/icon-eye-open.svg'
-                              : 'assets/icon-eye-closed.svg'
-                          }}" (click)="togglePassword()" />
+                        passwordVisible
+                          ? 'assets/icon-eye-open.svg'
+                          : 'assets/icon-eye-closed.svg'
+                      }}" (click)="togglePassword()" />
+                  </div>
+
+                  <div *ngIf="showPasswordRules" class="password-rules">
+                    <ul>
+                      <li [class.valid]="!f['password'].errors?.['minlength']">
+                        Мінімум 8 символів
+                      </li>
+                      <li [class.valid]="!f['password'].errors?.['hasUpperCase']">
+                        Принаймні одна велика літера
+                      </li>
+                      <li [class.valid]="!f['password'].errors?.['hasNumber']">
+                        Принаймні одна цифра
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
@@ -59,38 +78,40 @@
                     <input [type]="confirmVisible ? 'text' : 'password'" formControlName="confirmPassword"
                       placeholder="Повторіть введений пароль" required />
                     <img class="input-icon-eye" src="{{
-                            confirmVisible
-                              ? 'assets/icon-eye-open.svg'
-                              : 'assets/icon-eye-closed.svg'
-                          }}" (click)="toggleConfirm()" />
+                        confirmVisible
+                          ? 'assets/icon-eye-open.svg'
+                          : 'assets/icon-eye-closed.svg'
+                      }}" (click)="toggleConfirm()" />
+                  </div>
+                  <div *ngIf="form.hasError('mismatch') && f['confirmPassword'].touched" class="error-popup">
+                    Паролі не співпадають
                   </div>
                 </div>
 
               </div>
 
               <div class="link">
-                <a routerLink="/login" class="login-label">
+                <a routerLink="/auth/restore-password" class="login-label">
                   <div class="text-wrapper-2">Відновити пароль</div>
                 </a>
               </div>
 
             </div>
 
-            <button type="submit" class="button">
+            <button type="submit" class="button" [disabled]="form.invalid">
               <div class="text-wrapper-3">Зареєструватись</div>
             </button>
           </div>
 
           <div class="link-to-registration">
             <div class="text-wrapper-4">Маєте акаунт?</div>
-            <a routerLink="/login" class="login-label">
+            <a routerLink="/auth/login" class="login-label">
               <div class="text-wrapper-5">Увійти</div>
             </a>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
-
   <div class="decoration-5"></div>
 </div>

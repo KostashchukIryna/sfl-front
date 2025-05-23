@@ -51,7 +51,7 @@
     width: 700px;
     align-items: flex-start;
     gap: 68px;
-    padding: 64px 180px 64px 64px;
+    padding: 64px;
     position: relative;
     background-color: var(--extra);
     border-radius: 64px;
