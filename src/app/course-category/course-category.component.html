@@ -53,7 +53,15 @@
                     <div class="course-category-icon">📞</div>
                     <div class="category-course-label">Комунікація та взаємодія в НС</div>
                 </div>
+                <!-- <button class="button create-course-btn" *ngIf="isAdmin" (click)="openCreateCourse()">
+                    Створити курс
+                </button> -->
+
+                <div class="button" routerLink="/learning/create-course">
+                    <div class="button-title-create-course">Створити курс</div>
+                </div>
             </div>
+
         </div>
 
         <div class="courses-list-main">

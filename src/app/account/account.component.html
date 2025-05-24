@@ -12,11 +12,65 @@
             <div class="label-information">Загальна інформація</div>
 
             <div class="avatar-block">
-                <img class="avatar" [src]="avatarUrl" alt="Avatar" />
-                <div class="replace-text" (click)="fileInput.click()">Замінити фото</div>
-                <input type="file" #fileInput accept="image/*" hidden (change)="onFileSelected($event)" />
+                <img class="avatar-image" [src]="avatarUrl" alt="Avatar" />
+                <div class="replace-text" (click)="openAvatarModal()">
+                    Змінити аватар
+                </div>
             </div>
+
+            <div class="avatar-modal-overlay" *ngIf="showAvatarModal">
+                <div class="avatar-modal-content">
+                    <h3 class="choose-avatar-label">Оберіть свій аватар</h3>
+                    <div class="avatar-grid">
+                        <img *ngFor="let a of avatars" [src]="a" [class.selected]="a === avatarUrl"
+                            (click)="selectAvatar(a)" />
+                    </div>
+                    <button class="close-btn" (click)="closeAvatarModal()">
+                        Відмінити
+                    </button>
+                </div>
+            </div>
+
+
             <div class="personal-block">
+
+                <div class="name-fields">
+                    <div class="label-change-email-login">Додайте ПІБ</div>
+                    <div class="surname-full div-2">
+                        <div class="label-name">Прізвище</div>
+                        <div class="input-class input">
+                            <img class="account-circle2 input-icon" src="assets/username.svg" alt="Surname icon" />
+                            <input type="text" formControlName="lastName" placeholder="Введіть прізвище" required />
+                            <div class="empty-icon">
+                                <div class="rectangle-13"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="name-full div-2">
+                        <div class="label-name">Ім’я</div>
+                        <div class="input-class input">
+                            <img class="account-circle2 input-icon" src="assets/username.svg" alt="Name icon" />
+                            <input type="text" formControlName="firstName" placeholder="Введіть ім’я" required />
+                            <div class="empty-icon">
+                                <div class="rectangle-13"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="patronymic-full div-2">
+                        <div class="label-name">По-батькові</div>
+                        <div class="input-class input">
+                            <img class="account-circle2 input-icon" src="assets/username.svg" alt="Patronymic icon" />
+                            <input type="text" formControlName="middleName" placeholder="Введіть по-батькові"
+                                required />
+                            <div class="empty-icon">
+                                <div class="rectangle-13"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="change-email-login">
                     <div class="label-change-email-login">Зміна логіну та email</div>
@@ -44,7 +98,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 

@@ -691,6 +691,17 @@
     flex: 1;
 }
 
+.button-title-create-course {
+    color: var(--white-text, #f9fbff);
+    text-align: center;
+    font-family: var(--h4-font-family);
+    font-size: var(--h3-font-size, 16px);
+    line-height: var(--h4-line-height, 150%);
+    font-weight: var(--h4-font-weight, 500);
+    position: relative;
+    flex: 1;
+}
+
 .star2 {
     flex-shrink: 0;
     width: 16px;

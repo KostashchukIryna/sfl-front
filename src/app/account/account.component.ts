@@ -19,8 +19,25 @@ export class AccountComponent implements OnInit {
   passwordVisible = false;
   confirmVisible = false;
   responseMessage = '';
-  avatarUrl = 'assets/avatar0.png';
   selectedFile?: File;
+  avatarUrl = 'assets/avatars/1.png';
+  showAvatarModal = false;
+
+  avatars: string[] = Array.from({ length: 60 }, (_, i) => `assets/avatars/${i + 1}.png`);
+
+  openAvatarModal() {
+    this.showAvatarModal = true;
+  }
+
+  selectAvatar(url: string) {
+    this.avatarUrl = url;
+    this.showAvatarModal = false;
+    // тут можна одразу зберегти на бекенд, якщо треба
+  }
+
+  closeAvatarModal() {
+    this.showAvatarModal = false;
+  }
 
   constructor(
     private fb: FormBuilder,
@@ -31,11 +48,15 @@ export class AccountComponent implements OnInit {
 
   ngOnInit(): void {
     this.profileForm = this.fb.group({
-      username: ['', [Validators.required, Validators.pattern(GlobalConstants.usernameRegex)]],
+      lastName: ['', Validators.required],
+      firstName: ['', Validators.required],
+      middleName: [''],
+      username: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.minLength(6)]],
+      password: [''],
       confirmPassword: ['']
-    }, { validators: this.passwordMatch });
+    });
+
 
     // Завантаження профілю
     // this.userService.getProfile().subscribe(user => {
