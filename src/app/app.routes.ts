@@ -10,6 +10,7 @@ import { CourseLandingComponent } from './course-landing/course-landing.componen
 import { AccountComponent } from './account/account.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RestorePasswordComponent } from './restore-password/restore-password.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
 
 export const routes: Routes = [
   {
@@ -44,6 +45,7 @@ export const routes: Routes = [
       { path: 'article', component: ArticleComponent },
       { path: 'test', component: TestComponent },
       { path: 'course-landing', component: CourseLandingComponent },
+      { path: 'create-course', component: CreateCourseComponent },
     ]
   },
 

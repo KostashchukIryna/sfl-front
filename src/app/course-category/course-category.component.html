@@ -6,260 +6,51 @@
         <div class="courses-category">
             <div class="div2">Категорії курсів</div>
             <div class="courses-list">
-                <div class="course-category-item" [class.active]="isSelected('Всі курси')"
-                    (click)="selectCategory('Всі курси')">
-                    <div class="course-category-icon">📃</div>
-                    <div class="category-course-label">Всі курси</div>
+                <div *ngFor="let cat of courseCategories; let last = last">
+                    <div class="course-category-item" [class.active]="isSelected(cat.name)"
+                        (click)="selectCategory(cat.name)">
+                        <div class="course-category-icon">{{ cat.icon }}</div>
+                        <div class="category-course-label">{{ cat.name }}</div>
+                    </div>
+                    <div *ngIf="!last" class="separator"></div>
                 </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Основи виживання')"
-                    (click)="selectCategory('Основи виживання')">
-                    <div class="course-category-icon">🔥</div>
-                    <div class="category-course-label">Основи виживання</div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Перша медична допомога')"
-                    (click)="selectCategory('Перша медична допомога')">
-                    <div class="course-category-icon">🩺</div>
-                    <div class="category-course-label">Перша медична допомога</div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Психологічна стійкість')"
-                    (click)="selectCategory('Психологічна стійкість')">
-                    <div class="course-category-icon">🧠</div>
-                    <div class="category-course-label">Психологічна стійкість</div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Техніка безпеки та евакуація')"
-                    (click)="selectCategory('Техніка безпеки та евакуація')">
-                    <div class="course-category-icon">🚨</div>
-                    <div class="category-course-label">Техніка безпеки та евакуація</div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Кібербезпека під час війни')"
-                    (click)="selectCategory('Кібербезпека під час війни')">
-                    <div class="course-category-icon">🛡️</div>
-                    <div class="category-course-label">Кібербезпека під час війни</div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="course-category-item" [class.active]="isSelected('Комунікація та взаємодія в НС')"
-                    (click)="selectCategory('Комунікація та взаємодія в НС')">
-                    <div class="course-category-icon">📞</div>
-                    <div class="category-course-label">Комунікація та взаємодія в НС</div>
-                </div>
-                <!-- <button class="button create-course-btn" *ngIf="isAdmin" (click)="openCreateCourse()">
-                    Створити курс
-                </button> -->
 
                 <div class="button" routerLink="/learning/create-course">
                     <div class="button-title-create-course">Створити курс</div>
                 </div>
             </div>
-
         </div>
 
         <div class="courses-list-main">
-            <div class="courses-list-navbar">
-                <div class="label-bar">
-                    <div class="label">
-                        <div class="div2"> 🔥 </div>
-                        <div class="div10"> Курси з основ виживання </div>
-                    </div>
-                    <div class="filter">
-                        <img class="filter-icon" src="assets/filter.svg" alt="Фільтр" />
-                        <div class="div11"> Фільтр </div>
-                    </div>
-                </div>
-                <div class="autolayout-search-sort">
-                    <div class="search-autolayout">
-                        <div class="input-search">
-                            <img class="search" src="assets/search.svg" alt="Пошук" />
-                            <input class="placeholder-search" type="text" placeholder="Назва курсу" />
-                        </div>
-                    </div>
-
-                    <img class="sort-icon" src="assets/sort.svg" alt="Сортування" />
+            <div class="label-bar">
+                <div class="div10">{{ categoryHeading }}</div>
+            </div>
+            <div class="search-autolayout">
+                <div class="input-search">
+                    <img class="search" src="assets/search.svg" alt="Пошук" />
+                    <input class="placeholder-search" type="text" placeholder="Назва курсу" />
                 </div>
             </div>
             <div class="courses-list-category">
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
+                <div *ngFor="let course of filteredCourses" class="course-card">
+                    <div class="hero-image" [style.background-image]="'url(' + course.imageUrl + ')'">
                         <div class="rating">
                             <div class="star-rating">
                                 <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
+                                <div class="rating-label">{{ course.rating }}</div>
                             </div>
                         </div>
                     </div>
                     <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button" routerLink="/learning/course-menu">
-                        <div class="button-title">Дізнатись детальніше</div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
+                        <div class="description-title">{{ course.title }}</div>
+                        <div class="description-details">{{ course.description }}</div>
                     </div>
                     <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button">
-                        <div class="button-title"> Дізнатись детальніше </div>
-                    </div>
-                </div>
-                <div class="course-card">
-                    <div class="hero-image" [style.background-image]="'url(../../assets/hero-image.png)'">
-                        <div class="rating">
-                            <div class="star-rating">
-                                <img class="star" src="assets/star.svg" alt="Зірка" />
-                                <div class="rating-label"> 5 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="description-title"> Основи виживання у кризових умовах </div>
-                        <div class="description-details"> Навчіться базовим навичкам виживання під час
-                            надзвичайних ситуацій та криз.
-                        </div>
-                    </div>
-                    <div class="button" routerLink="/course-menu">
                         <div class="button-title">Дізнатись детальніше</div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

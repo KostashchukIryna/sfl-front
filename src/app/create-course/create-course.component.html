@@ -1,0 +1,422 @@
+<div class="course-create">
+    <app-sidebar></app-sidebar>
+    <div class="menu-creating">
+        <div class="decoration2"></div>
+        <div class="decoration3"></div>
+        <div class="navbar">
+            <img class="back" src="assets/back-logo.svg" />
+        </div>
+        <div class="navigation-page">
+            <div class="navigation-page-label">НАВІГАЦІЯ СТОРІНКОЮ</div>
+            <div class="navigations">
+                <div class="navigation-name-label" (click)="scrollToCourse()">МЕНЮ СТВОРЕННЯ КУРСУ</div>
+                <div class="navigation-name-label" (click)="scrollToModule()">МЕНЮ СТВОРЕННЯ МОДУЛЯ</div>
+                <div class="navigation-name-label" (click)="scrollToArticle()">МЕНЮ СТВОРЕННЯ СТАТТІ</div>
+                <div class="navigation-name-label" (click)="scrollToTest()">МЕНЮ СТВОРЕННЯ ТЕСТУ</div>
+            </div>
+        </div>
+        <div class="menu-create-course" id="create-course" #courseSection>
+            <div class="menu-create-label">
+                <div class="create-label">МЕНЮ СТВОРЕННЯ КУРСУ</div>
+            </div>
+            <form class="menu-create-course-autolayout">
+                <div class="choose-thumbnail">
+                    <div class="choose-thumbnail-label">Обкладинка курсу</div>
+                    <div class="thumbnail-img"></div>
+                    <div class="choose-thumbnail-button">Обрати зображення курсу</div>
+                </div>
+                <div class="course-name">
+                    <label class="course-name-label" for="courseName">Назва курсу</label>
+                    <div class="input-class">
+                        <input id="courseName" type="text" formControlName="courseName" class="input-class__control"
+                            placeholder="Назва курсу..." required />
+                    </div>
+                </div>
+
+                <div class="course-short-desc">
+                    <label class="course-short-desc-label" for="shortDesc">Короткий опис курсу</label>
+                    <div class="input-class">
+                        <input id="shortDesc" formControlName="shortDesc" class="input-class__control"
+                            placeholder="Короткий опис курсу..." required />
+                    </div>
+                </div>
+
+                <div class="course-category">
+                    <label class="course-category-label" for="category">Категорія курсу</label>
+                    <div class="input-class">
+                        <select id="category" formControlName="category" class="input-class__control" required>
+                            <option value="" disabled>Оберіть категорію курсу</option>
+                            <option *ngFor="let cat of categories" [value]="cat">
+                                {{ cat }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="assosiation-markers">
+                    <label class="assosiation-markers-label">Асоціативні маркери</label>
+                    <div class="markers">
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                        <div class="input-class">
+                            <input type="text" class="input-class__control" placeholder="Асоціативні маркери..." />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="course-about">
+                    <label class="course-about-label" for="about">Про що курс</label>
+                    <div class="input-class">
+                        <input id="about" type="text" formControlName="about" class="input-class__control"
+                            placeholder="Про що курс..." />
+                    </div>
+                </div>
+
+                <div class="course-for-who">
+                    <label class="course-for-who-label" for="audience">Кому стане в пригоді</label>
+                    <div class="input-class">
+                        <input id="audience" type="text" formControlName="audience" class="input-class__control"
+                            placeholder="Кому стане в пригоді..." />
+                    </div>
+                </div>
+
+                <div class="course-benefits">
+                    <div class="course-benefits-label">Завдяки курсу ви навчитеся</div>
+
+                    <div class="benefits-layout-double">
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-layout-double">
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-layout-double">
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="benefits-autolayout">
+                            <div class="input-benefit-header">
+                                <div class="placeholder-icon">
+                                    <input type="text" class="placeholder2"
+                                        placeholder="Узагальнений текст переваги..." />
+                                </div>
+                            </div>
+                            <div class="input-benefit-desc">
+                                <textarea class="textarea-settings" placeholder="Навчитеся завдяки курсу..."
+                                    rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="button-add">
+                    <div class="add-course-label">ДОДАТИ КУРС</div>
+                </button>
+            </form>
+        </div>
+
+        <form [formGroup]="form" class="form-module-create">
+            <div class="menu-create-module" id="create-module" #moduleSection>
+                <div class="menu-create-module-label">
+                    <div class="create-module-label">МЕНЮ СТВОРЕННЯ МОДУЛІВ</div>
+                </div>
+                <div formArrayName="modules">
+                    <div *ngFor="let mCtrl of modules.controls; let i = index" [formGroupName]="i"
+                        class="module-create">
+                        <div class="module-numeric">
+                            <div class="module-numeric-label">{{ i + 1 }} модуль</div>
+                        </div>
+                        <div class="module-autolayout">
+                            <div class="delete-module" (click)="removeModule(i)">
+                                <img class="delete-icon" src="assets/delete-icon.svg" />
+                                <div class="delete-module-label">Видалити модуль</div>
+                            </div>
+                            <div class="thumbnail-module">
+                                <div class="thumbnail-module-label">Обкладинка модуля</div>
+                                <div class="module-img"></div>
+                                <div class="choose-module-img-label">Обрати зображення модуля</div>
+                            </div>
+                            <div class="module-title">
+                                <div class="module-title-label">Назва модуля</div>
+                                <div class="input-class">
+                                    <input type="text" formControlName="title" placeholder="Назва модуля..."
+                                        class="input-class__control" />
+                                </div>
+                            </div>
+                            <div class="module-short-desc">
+                                <div class="module-short-desc-label">Короткий опис модуля</div>
+                                <div class="input-class">
+                                    <input type="text" formControlName="shortDesc" placeholder="Короткий опис..."
+                                        class="input-class__control" />
+                                </div>
+                            </div>
+                            <div class="module-long-desc">
+                                <div class="module-long-desc-label">Детальний опис модуля</div>
+                                <div class="input-class">
+                                    <textarea formControlName="longDesc" placeholder="Детальний опис модуля..."
+                                        class="textarea-settings" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <button type="button" class="button-add">
+                                <div class="button-add-module-to-course-label">
+                                    ДОДАТИ МОДУЛЬ ДО КУРСУ
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="add-new-module-button" (click)="addModule()">
+                    <div class="add-new-module-button-label">Додати новий модуль</div>
+                    <img class="add-circle" src="assets/add-circle-big.svg" />
+                </button>
+            </div>
+        </form>
+
+        <form [formGroup]="form" class="menu-create-article">
+            <div class="menu-create-article-autolayout" formArrayName="articles" id="create-article" #articleSection>
+
+                <div class="menu-create-module-label">
+                    <div class="create-module-label">МЕНЮ СТВОРЕННЯ СТАТЕЙ</div>
+                </div>
+
+                <div *ngFor="let art of articles.controls; let i = index" [formGroupName]="i" class="create-article">
+                    <div class="module-numeric">
+                        <div class="module-numeric-label">{{ i + 1 }} стаття</div>
+                    </div>
+                    <div class="delete-article" (click)="removeArticle(i)">
+                        <img class="delete-icon" src="assets/delete-icon.svg" />
+                        <div class="delete-article-label">Видалити статтю</div>
+                    </div>
+                    <div class="thumbnail-module">
+                        <div class="thumbnail-module-label">Обкладинка статті</div>
+                        <div class="module-img"></div>
+                        <div class="choose-module-img-label">Обрати зображення статті</div>
+                    </div>
+                    <div class="article-name">
+                        <div class="article-name-label">Назва статті</div>
+                        <div class="input-article">
+                            <input type="text" formControlName="name" placeholder="Назва статті..."
+                                class="input-class__control" />
+                        </div>
+                    </div>
+
+                    <div class="article-time-to-read">
+                        <div class="article-time-to-read-label">Час на прочитання</div>
+                        <div class="input-article">
+                            <input type="number" formControlName="timeToRead" placeholder="Хвилини..."
+                                class="input-class__control" />
+                        </div>
+                    </div>
+                    <div class="article-blocks">
+                        <div class="article-blocks-label">Блоки статті</div>
+                        <div class="blocks-article" formArrayName="blocks">
+
+                            <div *ngFor="let blk of getBlocks(i).controls; let j = index" [formGroupName]="j"
+                                class="benefits-autolayout">
+                                <div class="input-block-header">
+                                    <input type="text" formControlName="header"
+                                        class="placeholder2 input-class__control" placeholder="Назва блоку..." />
+                                    <button type="button" class="delete-block-button"
+                                        (click)="removeBlock(i, j)">×</button>
+                                </div>
+                                <div class="input-block-desc">
+                                    <textarea formControlName="content" class="textarea-settings"
+                                        placeholder="Вміст блоку..." rows="2"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button type="button" class="add-block-button" (click)="addBlock(i)">
+                        <div class="add-block-button-label">Додати новий блок</div>
+                        <img class="add-circle2" src="assets/add-circle-small.svg" />
+                    </button>
+                    <div class="to-which-module">
+                        <div class="to-which-module-label">
+                            Оберіть до якого модуля додати статтю
+                        </div>
+                        <div class="input-to-which-module">
+                            <select formControlName="toModule" class="input-class__control">
+                                <option *ngFor="let m of modules.controls; let k = index" [value]="k">
+                                    Модуль {{ k + 1 }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button-add-article-to-module">
+                        <div class="button-add-article-to-module-label">
+                            ДОДАТИ СТАТТЮ ДО МОДУЛЮ
+                        </div>
+                    </div>
+
+                </div>
+                <button type="button" class="add-new-module-button" (click)="addArticle()">
+                    <div class="add-new-module-button-label">Додати нову статтю</div>
+                    <img class="add-circle" src="assets/add-circle-big.svg" />
+                </button>
+
+            </div>
+        </form>
+
+        <form [formGroup]="form" class="menu-create-test" id="create-test" #testSection>
+
+            <div class="menu-create-test-label">
+                <div class="test-label">МЕНЮ СТВОРЕННЯ ТЕСТІВ</div>
+            </div>
+            <div formArrayName="tests" class="menu-create-test">
+                <div *ngFor="let test of tests.controls; let i = index" [formGroupName]="i"
+                    class="menu-create-test-autolayout">
+
+                    <div class="delete-article" (click)="removeTest(i)">
+                        <img class="delete-icon" src="assets/delete-icon.svg" />
+                        <div class="delete-article-label">Видалити тест</div>
+                    </div>
+
+                    <div class="test-name">
+                        <div class="test-name-label">Назва тесту</div>
+                        <div class="input-test">
+                            <input type="text" class="input-class__control" formControlName="name"
+                                placeholder="Назва тесту..." />
+                        </div>
+                    </div>
+
+                    <div class="questions-autolayout" formArrayName="questions">
+                        <div class="questions-autolayout-label">Запитання тесту</div>
+                        <div class="how-to-choose-correct-answer">Для того щоб обрати правильну відповідь для тесту,
+                            просто відмітьте кнопку навпроти правильної відповіді</div>
+                        <div *ngFor="let q of getQuestions(i).controls; let j = index" [formGroupName]="j"
+                            class="questions-autolayout">
+
+                            <div class="question-header">
+                                <div class="number-question">Запитання {{ j + 1 }}</div>
+                                <button type="button" class="delete-question-btn" (click)="removeQuestion(i, j)"
+                                    title="Видалити запитання">×</button>
+                            </div>
+                            <div class="auto-layout-answers">
+                                <div class="input-test">
+                                    <input type="text" class="input-class__control" formControlName="questionText"
+                                        placeholder="Назва запитання..." />
+                                </div>
+                                <div class="answers-autolayot" formArrayName="answers">
+                                    <div *ngFor="let a of getAnswers(i,j).controls; let k = index" [formGroupName]="k"
+                                        class="answer">
+                                        <label>
+                                            <input type="radio" name="correctAnswer{{i}}_{{j}}"
+                                                [checked]="a.value.isCorrect" (change)="selectCorrect(i, j, k)" />
+                                        </label>
+
+                                        <div class="input-test2">
+                                            <input type="text" class="input-class__control" formControlName="text"
+                                                placeholder="Варіант відповіді..." />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-new-question" (click)="addQuestion(i)">
+                        <div class="add-new-question-label">Додати нове запитання</div>
+                        <img class="add-circle4" src="assets/add-circle-small.svg" />
+                    </div>
+                    <div class="to-which-module">
+                        <div class="to-which-module-label">
+                            Оберіть до якого модуля додати тест
+                        </div>
+                        <div class="input-test">
+                            <select formControlName="module" class="input-class__control">
+                                <option *ngFor="let m of modules.controls; let k = index" [value]="k">
+                                    Модуль {{ k + 1 }}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="button-add-test-to-module">
+                        <div class="button-add-test-to-module-label">
+                            ДОДАТИ ТЕСТ ДО МОДУЛЮ
+                        </div>
+                    </div>
+                </div>
+                <div class="add-new-test" (click)="addTest()">
+                    <div class="add-new-test-label">Додати новий тест</div>
+                    <img class="add-circle5" src="assets/add-circle-big.svg" />
+                </div>
+            </div>
+        </form>
+        <button class="scroll-to-top" [class.visible]="showScrollButton" (click)="scrollToTop()">
+            <img class="back-logo-up" src="assets/back-logo.svg" />
+        </button>
+    </div>
+</div>
