@@ -11,9 +11,9 @@ import {
   ValidationErrors
 } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
-import { GlobalConstants } from '../global-constants';
-import { SnackbarService } from '../services/snackbar.service';
-import { EmailCheck, UserService } from '../services/user.service';
+import { GlobalConstants } from '../../global-constants';
+import { SnackbarService } from '../../services/snackbar.service';
+import { EmailCheck, UserService } from '../../services/user.service';
 import { catchError, debounceTime, distinctUntilChanged, first, map, Observable, of, switchMap } from 'rxjs';
 
 @Component({

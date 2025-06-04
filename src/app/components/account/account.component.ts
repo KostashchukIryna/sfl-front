@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
-import { GlobalConstants } from '../global-constants';
-import { SnackbarService } from '../services/snackbar.service';
-import { UserService } from '../services/user.service';
+import { GlobalConstants } from '../../global-constants';
+import { SnackbarService } from '../../services/snackbar.service';
+import { UserService } from '../../services/user.service';
 import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({

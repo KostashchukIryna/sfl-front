@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
-import { SnackbarService } from '../services/snackbar.service';
-import { UserService } from '../services/user.service';
-import { LocalStorageService } from '../services/local-storage.service';
-import { GlobalConstants } from '../global-constants';
+import { SnackbarService } from '../../services/snackbar.service';
+import { UserService } from '../../services/user.service';
+import { LocalStorageService } from '../../services/local-storage.service';
+import { GlobalConstants } from '../../global-constants';
 
 @Component({
   selector: 'app-signin',
@@ -30,7 +30,7 @@ export class SigninComponent implements OnInit {
     private snackbar: SnackbarService,
     private userService: UserService,
     private localStorageService: LocalStorageService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({

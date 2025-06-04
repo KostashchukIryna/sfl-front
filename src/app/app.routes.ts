@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
-import { SigninComponent } from './signin/signin.component';
-import { CourseCategoryComponent } from './course-category/course-category.component';
-import { CourseMenuComponent } from './course-menu/course-menu.component';
-import { ModuleMenuComponent } from './module-menu/module-menu.component';
-import { ArticleComponent } from './article/article.component';
-import { TestComponent } from './test/test.component';
-import { CourseLandingComponent } from './course-landing/course-landing.component';
-import { AccountComponent } from './account/account.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { RestorePasswordComponent } from './restore-password/restore-password.component';
-import { CreateCourseComponent } from './create-course/create-course.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { CourseCategoryComponent } from './components/course-category/course-category.component';
+import { CourseMenuComponent } from './components/course-menu/course-menu.component';
+import { ModuleMenuComponent } from './components/module-menu/module-menu.component';
+import { ArticleComponent } from './components/article/article.component';
+import { TestComponent } from './components/test/test.component';
+import { CourseLandingComponent } from './components/course-landing/course-landing.component';
+import { AccountComponent } from './components/account/account.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { RestorePasswordComponent } from './components/restore-password/restore-password.component';
+import { CreateCourseComponent } from './components/create-course/create-course.component';
 
 export const routes: Routes = [
   {
