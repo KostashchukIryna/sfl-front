@@ -21,11 +21,10 @@ export class CourseDataService {
 
                 return coursesFromServer;
             } catch (error) {
-                console.warn('Помилка API, повертаємо кешні дані з IndexedDB', error);
+                console.warn('API ERROR', error);
                 return await this.localDB.courses.toArray();
             }
         } else {
-            console.log('Офлайн — беремо курси з IndexedDB');
             return await this.localDB.courses.toArray();
         }
     }
@@ -37,7 +36,7 @@ export class CourseDataService {
                 await this.localDB.courses.put(course);
                 return course;
             } catch (error) {
-                console.warn('Не вдалось отримати курс із сервера, читаємо IndexedDB', error);
+                console.warn('NOT POSSIBLE TO RECEIVE DATA', error);
                 return await this.localDB.courses.get(courseId);
             }
         } else {

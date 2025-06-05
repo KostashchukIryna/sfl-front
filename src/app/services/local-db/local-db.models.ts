@@ -30,3 +30,9 @@ export interface User {
     username: string;
     email: string;
 }
+
+export interface AuthTokens {
+    id: number;
+    accessToken: string;
+    refreshToken: string;
+}

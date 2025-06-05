@@ -1,6 +1,6 @@
 import Dexie, { Table } from 'dexie';
 import { Injectable } from '@angular/core';
-import { Course, CourseModule, Category, User } from './local-db.models';
+import { Course, CourseModule, Category, User, AuthTokens } from './local-db.models';
 
 @Injectable({
     providedIn: 'root'
@@ -10,14 +10,15 @@ export class LocalDB extends Dexie {
     public modules!: Table<CourseModule, number>;
     public categories!: Table<Category, number>;
     public users!: Table<User, number>;
-
+    public auth!: Table<AuthTokens, number>;
     constructor() {
         super('PWA_EmergencyDB');
         this.version(1).stores({
             courses: '++id, title, categoryId',
             modules: '++id, courseId',
             categories: '++id, title',
-            users: '++id, username'
+            users: '++id, username',
+            auth: 'id',
         });
     }
 

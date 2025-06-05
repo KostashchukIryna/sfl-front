@@ -1,4 +1,4 @@
-import { Injectable, Inject} from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import {
   HttpInterceptor,
   HttpRequest,
@@ -7,9 +7,9 @@ import {
   HttpErrorResponse,
   HttpClient
 } from '@angular/common/http';
-import { Observable, BehaviorSubject, throwError, of } from 'rxjs';
+import { Observable, BehaviorSubject, throwError, from } from 'rxjs';
 import { catchError, switchMap, filter, take } from 'rxjs/operators';
-import { LocalStorageService } from './local-storage.service';
+import { AuthStorageService } from './local-db/auth-storage.service';
 import { API_URL } from '../app.config';
 
 interface NewTokenPair {
@@ -23,23 +23,26 @@ export class AuthInterceptor implements HttpInterceptor {
   private refreshSubject = new BehaviorSubject<NewTokenPair | null>(null);
 
   constructor(
-    private localStorage: LocalStorageService,
-    private http: HttpClient, 
+    private authStorage: AuthStorageService,
+    private http: HttpClient,
     @Inject(API_URL) private url: string
-  ) {}
+  ) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const token = this.localStorage.getAccessToken();
-    const authReq = token
-      ? req.clone({ setHeaders: { Authorization: `Bearer ${token}` } })
-      : req;
+    return from(this.authStorage.getAccessToken()).pipe(
+      switchMap(token => {
+        const authReq = token
+          ? req.clone({ setHeaders: { Authorization: `Bearer ${token}` } })
+          : req;
 
-    return next.handle(authReq).pipe(
-      catchError(err => {
-        if (err instanceof HttpErrorResponse && err.status === 401) {
-          return this.handle401(authReq, next);
-        }
-        return throwError(() => err);
+        return next.handle(authReq).pipe(
+          catchError(err => {
+            if (err instanceof HttpErrorResponse && err.status === 401) {
+              return this.handle401(authReq, next);
+            }
+            return throwError(() => err);
+          })
+        );
       })
     );
   }
@@ -49,26 +52,33 @@ export class AuthInterceptor implements HttpInterceptor {
       this.isRefreshing = true;
       this.refreshSubject.next(null);
 
-      const refreshToken = this.localStorage.getRefreshToken();
-      if (!refreshToken) {
-        return throwError(() => new Error('No refresh token'));
-      }
+      return from(this.authStorage.getRefreshToken()).pipe(
+        switchMap(refreshToken => {
+          if (!refreshToken) {
+            return throwError(() => new Error('No refresh token'));
+          }
 
-      return this.httpRefresh(refreshToken).pipe(
-        switchMap(tokens => {
-          this.isRefreshing = false;
-          this.localStorage.setAccessToken(tokens.accessToken);
-          this.localStorage.setRefreshToken(tokens.refreshToken);
-          this.refreshSubject.next(tokens);
-
-          return next.handle(
-            req.clone({ setHeaders: { Authorization: `Bearer ${tokens.accessToken}` } })
+          return this.httpRefresh(refreshToken).pipe(
+            switchMap(tokens => {
+              this.isRefreshing = false;
+              this.refreshSubject.next(tokens);
+              return from(Promise.all([
+                this.authStorage.setAccessToken(tokens.accessToken),
+                this.authStorage.setRefreshToken(tokens.refreshToken)
+              ])).pipe(
+                switchMap(() => {
+                  return next.handle(
+                    req.clone({ setHeaders: { Authorization: `Bearer ${tokens.accessToken}` } })
+                  );
+                })
+              );
+            }),
+            catchError(err => {
+              this.isRefreshing = false;
+              this.authStorage.clearAll();
+              return throwError(() => err);
+            })
           );
-        }),
-        catchError(err => {
-          this.isRefreshing = false;
-          this.localStorage.clearAll();
-          return throwError(() => err);
         })
       );
     }
@@ -85,7 +95,8 @@ export class AuthInterceptor implements HttpInterceptor {
   }
 
   private httpRefresh(refreshToken: string): Observable<NewTokenPair> {
-    return this.http
-      .get<NewTokenPair>(`${this.url}/security/updateAccessToken?refreshToken=${refreshToken}`);
+    return this.http.get<NewTokenPair>(
+      `${this.url}/security/updateAccessToken?refreshToken=${refreshToken}`
+    );
   }
 }
